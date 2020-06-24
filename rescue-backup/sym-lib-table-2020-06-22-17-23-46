@@ -1,0 +1,6 @@
+(sym_lib_table
+  (lib (name poncho_grande)(type Legacy)(uri ${KIPRJMOD}/poncho_grande.lib)(options "")(descr ""))
+  (lib (name ad2s1210)(type Legacy)(uri ${KIPRJMOD}/ad2s1210.lib)(options "")(descr ""))
+  (lib (name poncho_grande-rescue)(type Legacy)(uri ${KIPRJMOD}/poncho_grande-rescue.lib)(options "")(descr ""))
+  (lib (name ad8397)(type Legacy)(uri /home/gustavo/SM13/poncho/AD8397ARZ.lib)(options "")(descr ""))
+)

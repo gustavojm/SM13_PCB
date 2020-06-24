@@ -1,0 +1,6 @@
+(sym_lib_table
+  (lib (name AD2S1210)(type Legacy)(uri /home/gustavo/SM13/Esquema/ad2s1210.lib)(options "")(descr ""))
+  (lib (name AD8397ARZ)(type Legacy)(uri /home/gustavo/SM13/Esquema/AD8397ARZ.lib)(options "")(descr ""))
+  (lib (name conn_3x2)(type Legacy)(uri /home/gustavo/SM13/Esquema/conn_3x2.lib)(options "")(descr ""))
+  (lib (name conn_10x2)(type Legacy)(uri /home/gustavo/SM13/Esquema/conn_10x2.lib)(options "")(descr ""))
+)
