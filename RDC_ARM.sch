@@ -3,7 +3,7 @@ EELAYER 30 0
 EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
-Sheet 3 4
+Sheet 4 4
 Title ""
 Date ""
 Rev ""
@@ -299,68 +299,15 @@ Wire Wire Line
 Wire Wire Line
 	2600 5950 3050 5950
 Text HLabel 2500 4250 0    60   BiDi ~ 0
-GPIO4
+GPIO2
 Wire Wire Line
 	2600 4250 2500 4250
 Text HLabel 2500 4850 0    60   BiDi ~ 0
-GPIO3
+GPIO1
 Wire Wire Line
 	2500 4850 2600 4850
-$Comp
-L Switch:SW_DIP_x02 SW?
-U 1 1 5EFA850A
-P 2600 2600
-AR Path="/5EFA850A" Ref="SW?"  Part="1" 
-AR Path="/5EF45E27/5EFA850A" Ref="SW1"  Part="1" 
-F 0 "SW1" V 2646 2470 50  0000 R CNN
-F 1 "SW_DIP_x02" V 2555 2470 50  0000 R CNN
-F 2 "" H 2600 2600 50  0001 C CNN
-F 3 "~" H 2600 2600 50  0001 C CNN
-	1    2600 2600
-	0    -1   -1   0   
-$EndComp
-Wire Wire Line
-	2500 2200 2500 2300
-Wire Wire Line
-	2500 2300 2600 2300
-$Comp
-L Device:R R?
-U 1 1 5EFA8512
-P 2050 3600
-AR Path="/5EFA8512" Ref="R?"  Part="1" 
-AR Path="/5EF45E27/5EFA8512" Ref="R1"  Part="1" 
-F 0 "R1" H 2120 3646 50  0000 L CNN
-F 1 "1K" H 2120 3555 50  0000 L CNN
-F 2 "" V 1980 3600 50  0001 C CNN
-F 3 "~" H 2050 3600 50  0001 C CNN
-	1    2050 3600
-	1    0    0    -1  
-$EndComp
-$Comp
-L Device:R R?
-U 1 1 5EFA8518
-P 2300 3600
-AR Path="/5EFA8518" Ref="R?"  Part="1" 
-AR Path="/5EF45E27/5EFA8518" Ref="R2"  Part="1" 
-F 0 "R2" H 2370 3646 50  0000 L CNN
-F 1 "1K" H 2370 3555 50  0000 L CNN
-F 2 "" V 2230 3600 50  0001 C CNN
-F 3 "~" H 2300 3600 50  0001 C CNN
-	1    2300 3600
-	1    0    0    -1  
-$EndComp
 Wire Wire Line
 	3250 3100 3250 3300
-Wire Wire Line
-	2050 4050 2300 4050
-Wire Wire Line
-	2300 3300 2600 3300
-Wire Wire Line
-	2600 3300 2600 3950
-Connection ~ 2300 4050
-Wire Wire Line
-	2300 4050 2600 4050
-Connection ~ 2500 2300
 Connection ~ 1300 4050
 Connection ~ 1700 3100
 Wire Wire Line
@@ -373,22 +320,20 @@ Connection ~ 2050 4050
 Wire Wire Line
 	1700 3100 3250 3100
 Wire Wire Line
-	3050 3200 3050 3300
-Wire Wire Line
 	1300 4800 1300 4950
 Wire Wire Line
 	1700 4800 1700 4950
 $Comp
 L power:+3.3V #PWR?
 U 1 1 5EFA852F
-P 2500 2200
+P 2600 3050
 AR Path="/5EFA852F" Ref="#PWR?"  Part="1" 
 AR Path="/5EF45E27/5EFA852F" Ref="#PWR0113"  Part="1" 
-F 0 "#PWR0113" H 2550 2230 20  0001 C CNN
-F 1 "+3.3V" H 2503 2328 30  0000 C CNN
-F 2 "" H 2500 2200 60  0000 C CNN
-F 3 "" H 2500 2200 60  0000 C CNN
-	1    2500 2200
+F 0 "#PWR0113" H 2650 3080 20  0001 C CNN
+F 1 "+3.3V" H 2603 3178 30  0000 C CNN
+F 2 "" H 2600 3050 60  0000 C CNN
+F 3 "" H 2600 3050 60  0000 C CNN
+	1    2600 3050
 	1    0    0    -1  
 $EndComp
 $Comp
@@ -510,7 +455,7 @@ F 3 "" H 6250 5400 60  0000 C CNN
 $EndComp
 Connection ~ 6250 4250
 Text HLabel 6550 4250 2    60   BiDi ~ 0
-GPIO2
+GPIO0
 Wire Wire Line
 	6250 4250 6550 4250
 $Comp
@@ -700,7 +645,7 @@ P 9650 2950
 AR Path="/5EFA85D8" Ref="R?"  Part="1" 
 AR Path="/5EF45E27/5EFA85D8" Ref="R12"  Part="1" 
 F 0 "R12" V 9443 2950 50  0000 C CNN
-F 1 "15,4K" V 9534 2950 50  0000 C CNN
+F 1 "12K" V 9534 2950 50  0000 C CNN
 F 2 "" V 9580 2950 50  0001 C CNN
 F 3 "~" H 9650 2950 50  0001 C CNN
 	1    9650 2950
@@ -728,7 +673,7 @@ P 9650 5450
 AR Path="/5EFA85E5" Ref="R?"  Part="1" 
 AR Path="/5EF45E27/5EFA85E5" Ref="R13"  Part="1" 
 F 0 "R13" V 9443 5450 50  0000 C CNN
-F 1 "15,4K" V 9534 5450 50  0000 C CNN
+F 1 "12K" V 9534 5450 50  0000 C CNN
 F 2 "" V 9580 5450 50  0001 C CNN
 F 3 "~" H 9650 5450 50  0001 C CNN
 	1    9650 5450
@@ -934,18 +879,8 @@ Wire Wire Line
 Connection ~ 9950 3300
 Wire Wire Line
 	9950 3300 9950 3750
-Text Notes 1400 2800 0    60   ~ 0
-Res0  Res1\n  0     0    10bits\n  0     1    12bits\n  1     0    14bits\n  1     1    16bits
-Wire Wire Line
-	2050 3200 2500 3200
-Wire Wire Line
-	2500 2900 2500 3200
-Connection ~ 2600 3300
-Connection ~ 2500 3200
-Wire Wire Line
-	2500 3200 3050 3200
-Wire Wire Line
-	2600 2900 2600 3300
+Text Notes 2350 2850 0    60   ~ 0
+Res0/Res1\n  0    0   10bits\n  0    1   12bits\n  1    0   14bits\n  1    1   16bits
 Wire Wire Line
 	1300 3100 1300 3450
 Wire Wire Line
@@ -954,14 +889,6 @@ Wire Wire Line
 	1700 3750 1700 4050
 Wire Wire Line
 	1300 3750 1300 4050
-Wire Wire Line
-	2050 3200 2050 3450
-Wire Wire Line
-	2050 3750 2050 4050
-Wire Wire Line
-	2300 3750 2300 4050
-Wire Wire Line
-	2300 3300 2300 3450
 Connection ~ 4250 1550
 Wire Wire Line
 	3550 1550 3550 3300
@@ -1059,20 +986,8 @@ Text Label 4050 3050 1    60   ~ 0
 EXC
 Wire Wire Line
 	4050 2700 4050 3300
-Text Notes 4600 3150 0    60   ~ 0
+Text Notes 4500 2850 0    60   ~ 0
 A0/A1\n 0  0 Normal mode—position output\n 0  1 Normal mode—velocity output\n 1  0 Reserved\n 1  1 Configuration mode
-Wire Wire Line
-	4650 3350 4650 3950
-Wire Wire Line
-	4150 3300 4150 3250
-Wire Wire Line
-	4150 3250 4650 3250
-Wire Wire Line
-	4650 3350 4800 3350
-Text HLabel 4800 3350 2    60   BiDi ~ 0
-GPIO1
-Text HLabel 4650 3250 2    60   BiDi ~ 0
-GPIO0
 Connection ~ 8450 4050
 Wire Wire Line
 	8450 4050 8450 4350
@@ -1086,4 +1001,33 @@ Wire Wire Line
 	8450 3350 8450 4050
 Text Label 7850 3950 2    60   ~ 0
 EXC
+Wire Wire Line
+	2050 4050 2600 4050
+$Comp
+L power:+3.3V #PWR?
+U 1 1 5EF72770
+P 4650 3050
+AR Path="/5EF72770" Ref="#PWR?"  Part="1" 
+AR Path="/5EF45E27/5EF72770" Ref="#PWR0123"  Part="1" 
+F 0 "#PWR0123" H 4700 3080 20  0001 C CNN
+F 1 "+3.3V" H 4653 3178 30  0000 C CNN
+F 2 "" H 4650 3050 60  0000 C CNN
+F 3 "" H 4650 3050 60  0000 C CNN
+	1    4650 3050
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4150 3300 4650 3300
+Wire Wire Line
+	4650 3300 4650 3950
+Wire Wire Line
+	3050 3300 2600 3300
+Wire Wire Line
+	2600 3300 2600 3950
+Wire Wire Line
+	2600 3050 2600 3300
+Connection ~ 2600 3300
+Wire Wire Line
+	4650 3050 4650 3300
+Connection ~ 4650 3300
 $EndSCHEMATC
