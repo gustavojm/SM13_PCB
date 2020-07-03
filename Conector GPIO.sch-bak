@@ -3,7 +3,7 @@ EELAYER 30 0
 EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
-Sheet 3 4
+Sheet 2 5
 Title ""
 Date ""
 Rev ""
@@ -69,17 +69,6 @@ Text HLabel 6600 2650 2    60   BiDi ~ 0
 GPIO13
 Wire Wire Line
 	6300 2650 6600 2650
-$Comp
-L Device:Thermistor TH8
-U 1 1 52CA1D91
-P 4350 1750
-F 0 "TH8" V 4450 1800 50  0000 C CNN
-F 1 "MF-MSMF030-2" V 4250 1750 50  0000 C CNN
-F 2 "~" H 4350 1750 60  0000 C CNN
-F 3 "~" H 4350 1750 60  0000 C CNN
-	1    4350 1750
-	0    -1   -1   0   
-$EndComp
 Text Label 4800 1750 0    60   ~ 0
 USR_3.3V
 $Comp
@@ -92,17 +81,6 @@ F 2 "" H 4000 1750 60  0000 C CNN
 F 3 "" H 4000 1750 60  0000 C CNN
 	1    4000 1750
 	1    0    0    -1  
-$EndComp
-$Comp
-L Device:Thermistor TH9
-U 1 1 52CA1E88
-P 7500 1750
-F 0 "TH9" V 7600 1800 50  0000 C CNN
-F 1 "MF-MSMF110-2" V 7400 1750 50  0000 C CNN
-F 2 "~" H 7500 1750 60  0000 C CNN
-F 3 "~" H 7500 1750 60  0000 C CNN
-	1    7500 1750
-	0    -1   -1   0   
 $EndComp
 $Comp
 L power:GND #PWR0127
@@ -161,7 +139,7 @@ U 1 1 52CCD42B
 P 5850 3550
 F 0 "P14" H 5850 3800 50  0000 C CNN
 F 1 "SPI" V 5850 3600 40  0000 C CNN
-F 2 "" H 5850 3550 60  0000 C CNN
+F 2 "Connector_PinSocket_2.54mm:PinSocket_2x03_P2.54mm_Vertical" H 5850 3550 60  0001 C CNN
 F 3 "" H 5850 3550 60  0000 C CNN
 	1    5850 3550
 	1    0    0    -1  
@@ -201,7 +179,7 @@ U 1 1 5343059D
 P 5900 2200
 F 0 "P12" H 5900 2750 60  0000 C CNN
 F 1 "CONN_10X2" V 5900 2100 50  0000 C CNN
-F 2 "" H 5900 2200 60  0000 C CNN
+F 2 "Connector_PinSocket_2.54mm:PinSocket_2x10_P2.54mm_Vertical" H 5900 2200 60  0001 C CNN
 F 3 "" H 5900 2200 60  0000 C CNN
 	1    5900 2200
 	1    0    0    -1  
@@ -234,10 +212,6 @@ Wire Wire Line
 	3550 1950 3550 1850
 Wire Wire Line
 	8300 1950 8300 1900
-Wire Wire Line
-	4550 1750 5500 1750
-Wire Wire Line
-	6300 1750 7300 1750
 Wire Wire Line
 	7700 1750 7800 1750
 $Comp
@@ -278,10 +252,7 @@ Wire Wire Line
 	3650 1950 3550 1950
 Wire Wire Line
 	6300 1950 8300 1950
-Connection ~ 7700 1750
 Connection ~ 4100 1750
-Wire Wire Line
-	4100 1750 4150 1750
 Wire Wire Line
 	4000 1750 4100 1750
 $Comp
@@ -308,6 +279,10 @@ NoConn ~ 5250 2450
 NoConn ~ 5250 2550
 NoConn ~ 5250 2650
 NoConn ~ 5200 3600
-NoConn ~ 6600 2150
 NoConn ~ 5250 2250
+Wire Wire Line
+	4100 1750 5500 1750
+Wire Wire Line
+	6300 1750 7700 1750
+Connection ~ 7700 1750
 $EndSCHEMATC
