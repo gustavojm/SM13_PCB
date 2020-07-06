@@ -134,10 +134,10 @@ F 3 "" H 7800 1750 60  0000 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L conn_3x2:CONN_3X2 P2
+L conn_3x2:CONN_3X2 P14
 U 1 1 52CCD42B
 P 5850 3550
-F 0 "P2" H 5850 3800 50  0000 C CNN
+F 0 "P14" H 5850 3800 50  0000 C CNN
 F 1 "SPI" V 5850 3600 40  0000 C CNN
 F 2 "Connector_PinSocket_2.54mm:PinSocket_2x03_P2.54mm_Vertical" H 5850 3550 60  0001 C CNN
 F 3 "" H 5850 3550 60  0000 C CNN
@@ -174,10 +174,10 @@ Wire Wire Line
 Text Notes 5150 900  0    60   ~ 0
 Conectores de expansión LVTTL.\nEn formato de pines, 2.54mm de pitch.
 $Comp
-L conn_10x2:CONN_10X2 P1
+L conn_10x2:CONN_10X2 P12
 U 1 1 5343059D
 P 5900 2200
-F 0 "P1" H 5900 2750 60  0000 C CNN
+F 0 "P12" H 5900 2750 60  0000 C CNN
 F 1 "CONN_10X2" V 5900 2100 50  0000 C CNN
 F 2 "Connector_PinSocket_2.54mm:PinSocket_2x10_P2.54mm_Vertical" H 5900 2200 60  0001 C CNN
 F 3 "" H 5900 2200 60  0000 C CNN
