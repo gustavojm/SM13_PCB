@@ -21,7 +21,7 @@ AR Path="/5EF448F6" Ref="U?"  Part="1"
 AR Path="/5EF34214/5EF448F6" Ref="U3"  Part="1" 
 F 0 "U3" H 3100 2342 50  0000 C CNN
 F 1 "L7812" H 3100 2251 50  0000 C CNN
-F 2 "Package_TO_SOT_THT:TO-218-3_Vertical" H 3125 1950 50  0001 L CIN
+F 2 "Package_TO_SOT_SMD:TO-252-3_TabPin2" H 3125 1950 50  0001 L CIN
 F 3 "http://www.st.com/content/ccc/resource/technical/document/datasheet/41/4f/b3/b0/12/d4/47/88/CD00000444.pdf/files/CD00000444.pdf/jcr:content/translations/en.CD00000444.pdf" H 3100 2050 50  0001 C CNN
 	1    3100 2100
 	1    0    0    -1  
