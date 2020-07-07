@@ -727,50 +727,48 @@ Wire Wire Line
 	7600 3950 7900 3950
 Wire Wire Line
 	7900 4250 7600 4250
-Text Label 10400 3150 2    60   ~ 0
+Text Label 10500 3250 2    60   ~ 0
 COS
-Text Label 10400 3250 2    60   ~ 0
+Text Label 10500 3350 2    60   ~ 0
 COSLO
-Text Label 10400 3550 2    60   ~ 0
+Text Label 10500 3650 2    60   ~ 0
 SINLO
-Text Label 10400 3450 2    60   ~ 0
+Text Label 10500 3550 2    60   ~ 0
 SIN
 Wire Wire Line
-	10500 3250 10100 3250
+	10600 3350 10200 3350
 Wire Wire Line
-	10500 3150 10100 3150
+	10600 3250 10200 3250
 Wire Wire Line
-	10500 3550 10100 3550
+	10600 3650 10200 3650
 Wire Wire Line
-	10500 3450 10100 3450
-Text Label 10400 3950 2    60   ~ 0
+	10600 3550 10200 3550
+Text Label 10500 4050 2    60   ~ 0
 AGND
-Text Label 10400 3650 2    60   ~ 0
+Text Label 10500 3750 2    60   ~ 0
 AGND
-Text Label 10400 3350 2    60   ~ 0
+Text Label 10500 3450 2    60   ~ 0
 AGND
 Wire Wire Line
-	10500 3950 10100 3950
+	10600 4050 10200 4050
 Wire Wire Line
-	10500 3650 10100 3650
+	10600 3750 10200 3750
 Wire Wire Line
-	10500 3350 10100 3350
+	10600 3450 10200 3450
 Wire Wire Line
-	9950 3850 10500 3850
-Wire Wire Line
-	9950 3750 10500 3750
+	10050 3950 10600 3950
 $Comp
 L Connector:Screw_Terminal_01x09 J?
 U 1 1 5EFA861B
-P 10700 3550
+P 10800 3650
 AR Path="/5EFA861B" Ref="J?"  Part="1" 
 AR Path="/5EF45E27/5EFA861B" Ref="J1"  Part="1" 
 AR Path="/5F077C82/5EFA861B" Ref="J?"  Part="1" 
-F 0 "J1" H 10780 3592 50  0000 L CNN
-F 1 "CN_ARM" H 10780 3501 50  0000 L CNN
-F 2 "TerminalBlock_Phoenix:TerminalBlock_Phoenix_MKDS-1,5-9-5.08_1x09_P5.08mm_Horizontal" H 10700 3550 50  0001 C CNN
-F 3 "~" H 10700 3550 50  0001 C CNN
-	1    10700 3550
+F 0 "J1" H 10880 3692 50  0000 L CNN
+F 1 "CN_ARM" H 10880 3601 50  0000 L CNN
+F 2 "TerminalBlock_Phoenix:TerminalBlock_Phoenix_MKDS-1,5-9-5.08_1x09_P5.08mm_Horizontal" H 10800 3650 50  0001 C CNN
+F 3 "~" H 10800 3650 50  0001 C CNN
+	1    10800 3650
 	1    0    0    -1  
 $EndComp
 $Comp
@@ -1085,6 +1083,12 @@ Wire Wire Line
 	5800 2900 5800 2950
 Wire Wire Line
 	9950 2950 9950 3300
-Connection ~ 9950 3750
+Wire Wire Line
+	9950 3850 10600 3850
 Connection ~ 9950 3850
+Wire Wire Line
+	10050 3950 10050 3750
+Wire Wire Line
+	10050 3750 9950 3750
+Connection ~ 9950 3750
 $EndSCHEMATC

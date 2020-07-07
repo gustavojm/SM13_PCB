@@ -24,6 +24,10 @@
       (path pcb 0  286924 -176044  148324 -176044  148324 -89846.5  286924 -89846.5
             286924 -176044)
     )
+    (plane GND (polygon F.Cu 0  280480 -140140  158960 -140140  158930 -100450  280450 -100450
+            280480 -140140))
+    (plane GND (polygon B.Cu 0  280480 -140140  158960 -140140  158930 -100450  280450 -100450
+            280480 -140140))
     (via "Via[0-1]_635:254_um")
     (rule
       (width 254)
@@ -33,11 +37,16 @@
     )
   )
   (placement
+    (component TestPoint:TestPoint_THTPad_1.0x1.0mm_Drill0.5mm
+      (place TP3 220380 -134615 front 0 (PN TP_MISO))
+      (place TP2 215895 -134615 front 0 (PN TP_MOSI))
+      (place TP1 211410 -134615 front 0 (PN TP_SCK))
+    )
     (component Capacitor_SMD:C_1206_3216Metric_Pad1.42x1.75mm_HandSolder
       (place C19 173826 -134735 front 180 (PN 10n))
       (place C20 173826 -137738 front 0 (PN 4,7µ))
       (place R7 264692 -128575 front 180 (PN 1K))
-      (place C27 275640 -119055 front 0 (PN 0,1µ))
+      (place C27 274950 -117875 front 0 (PN 0,1µ))
       (place C10 222016 -124325 front 0 (PN 20p))
       (place C12 233958 -134735 front 0 (PN 10n))
       (place C13 233958 -137738 front 0 (PN 4,7µ))
@@ -90,14 +99,14 @@
       (place J2 210306 -106875 front 180 (PN CN_POLE))
     )
     (component "Package_TO_SOT_SMD:TO-252-3_TabPin2"
-      (place U3 276700 -127200 front 270 (PN L7812))
+      (place U3 276010 -126020 front 270 (PN L7812))
     )
     (component "Package_QFP:LQFP-48-1EP_7x7mm_P0.5mm_EP3.6x3.6mm"
       (place AD1 248028 -124235 front 0 (PN AD2S1210))
       (place AD2 194983 -123960 front 0 (PN AD2S1210))
     )
     (component Capacitor_SMD:CP_Elec_4x5.4
-      (place C26 275858 -112705 front 0 (PN 10µ))
+      (place C26 275168 -111525 front 0 (PN 10µ))
       (place C5 244728 -115255 front 180 (PN 10µ))
       (place C18 191638 -115255 front 180 (PN 10µ))
     )
@@ -142,6 +151,17 @@
     )
   )
   (library
+    (image TestPoint:TestPoint_THTPad_1.0x1.0mm_Drill0.5mm
+      (outline (path signal 120  -700 700  700 700))
+      (outline (path signal 120  700 700  700 -700))
+      (outline (path signal 120  700 -700  -700 -700))
+      (outline (path signal 120  -700 -700  -700 700))
+      (outline (path signal 50  -1000 1000  1000 1000))
+      (outline (path signal 50  -1000 1000  -1000 -1000))
+      (outline (path signal 50  1000 -1000  1000 1000))
+      (outline (path signal 50  1000 -1000  -1000 -1000))
+      (pin Rect[A]Pad_1000x1000_um 1 0 0)
+    )
     (image Capacitor_SMD:C_1206_3216Metric_Pad1.42x1.75mm_HandSolder
       (outline (path signal 100  -1600 -800  -1600 800))
       (outline (path signal 100  -1600 800  1600 800))
@@ -838,6 +858,11 @@
       (shape (rect F.Cu -450 -400 450 400))
       (attach off)
     )
+    (padstack Rect[A]Pad_1000x1000_um
+      (shape (rect F.Cu -500 -500 500 500))
+      (shape (rect B.Cu -500 -500 500 500))
+      (attach off)
+    )
     (padstack Rect[A]Pad_1700x1700_um
       (shape (rect F.Cu -850 -850 850 850))
       (shape (rect B.Cu -850 -850 850 850))
@@ -877,13 +902,13 @@
       (pins AD1-10 AD2-10 P12-8)
     )
     (net "/RDC ARM/MISO"
-      (pins P14-1 AD1-11 AD2-11)
+      (pins TP3-1 P14-1 AD1-11 AD2-11)
     )
     (net "/RDC ARM/MOSI"
-      (pins P14-2 AD1-12 AD2-12)
+      (pins TP2-1 P14-2 AD1-12 AD2-12)
     )
     (net /GPIO/SPI_SCK
-      (pins P14-6 AD1-13 AD2-13)
+      (pins TP1-1 P14-6 AD1-13 AD2-13)
     )
     (net /GPIO/GPIO0
       (pins R8-2 AD1-33 AD2-33 C8-1 P12-7)

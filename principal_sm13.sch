@@ -120,4 +120,43 @@ U 5EF34214
 F0 "Fuente" 50
 F1 "Fuente_12v.sch" 50
 $EndSheet
+$Comp
+L Connector:TestPoint TP1
+U 1 1 5F11CC37
+P 5900 2550
+F 0 "TP1" H 5958 2668 50  0000 L CNN
+F 1 "TP_SCK" H 5650 2750 50  0000 L CNN
+F 2 "TestPoint:TestPoint_THTPad_1.0x1.0mm_Drill0.5mm" H 6100 2550 50  0001 C CNN
+F 3 "~" H 6100 2550 50  0001 C CNN
+	1    5900 2550
+	1    0    0    -1  
+$EndComp
+$Comp
+L Connector:TestPoint TP2
+U 1 1 5F11D1E5
+P 6050 2550
+F 0 "TP2" H 6108 2668 50  0000 L CNN
+F 1 "TP_MOSI" H 5900 2850 50  0000 L CNN
+F 2 "TestPoint:TestPoint_THTPad_1.0x1.0mm_Drill0.5mm" H 6250 2550 50  0001 C CNN
+F 3 "~" H 6250 2550 50  0001 C CNN
+	1    6050 2550
+	1    0    0    -1  
+$EndComp
+$Comp
+L Connector:TestPoint TP3
+U 1 1 5F11D4A3
+P 6200 2550
+F 0 "TP3" H 6258 2668 50  0000 L CNN
+F 1 "TP_MISO" H 6050 2750 50  0000 L CNN
+F 2 "TestPoint:TestPoint_THTPad_1.0x1.0mm_Drill0.5mm" H 6400 2550 50  0001 C CNN
+F 3 "~" H 6400 2550 50  0001 C CNN
+	1    6200 2550
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5900 2550 5900 2700
+Wire Wire Line
+	6050 2550 6050 2850
+Wire Wire Line
+	6200 2550 6200 3000
 $EndSCHEMATC
