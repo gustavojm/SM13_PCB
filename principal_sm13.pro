@@ -1,4 +1,4 @@
-update=lun 06 jul 2020 20:04:00 -03
+update=mar 07 jul 2020 10:05:18 -03
 version=1
 last_client=kicad
 [general]
@@ -45,9 +45,9 @@ dPairWidth1=0.254
 dPairGap1=0.25
 dPairViaGap1=0.25
 SilkLineWidth=0.127
-SilkTextSizeV=0.508
-SilkTextSizeH=0.508
-SilkTextSizeThickness=0.127
+SilkTextSizeV=0.52
+SilkTextSizeH=0.52
+SilkTextSizeThickness=0.12
 SilkTextItalic=0
 SilkTextUpright=1
 CopperLineWidth=0.2
