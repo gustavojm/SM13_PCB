@@ -11,7 +11,7 @@
     (via_costs 50)
     (plane_via_costs 5)
     (start_ripup_costs 100)
-    (start_pass_no 3153)
+    (start_pass_no 7825)
     (layer_rule F.Cu
       (active on)
       (preferred_direction horizontal)
@@ -87,7 +87,7 @@
     )
   )
   (class "kicad_default"
-    GND +3V3 /GPIO/GPIO2 +5V "Net-(AD1-Pad7)" "Net-(AD1-Pad8)" /GPIO/GPIO1 "/RDC ARM/MISO"
+    +3V3 GND /GPIO/GPIO2 +5V "Net-(AD1-Pad7)" "Net-(AD1-Pad8)" /GPIO/GPIO1 "/RDC ARM/MISO"
     "/RDC ARM/MOSI" "/GPIO/SPI_SCK" /GPIO/GPIO0 "Net-(AD1-Pad34)" "Net-(AD1-Pad35)" "/RDC ARM/EXC" "/RDC ARM/~EXC" "/RDC ARM/SIN"
     "/RDC ARM/SINLO" "/RDC ARM/COSLO" "/RDC ARM/COS" "Net-(AD1-Pad46)" "Net-(AD2-Pad46)" "/RDC POLE/COS" "/RDC POLE/COSLO" "/RDC POLE/SINLO"
     "/RDC POLE/SIN" "/RDC POLE/~EXC" "/RDC POLE/EXC" "Net-(AD2-Pad35)" "Net-(AD2-Pad34)" "Net-(AD2-Pad8)" "Net-(AD2-Pad7)" /GPIO/GPIO3
