@@ -11,7 +11,7 @@
     (via_costs 50)
     (plane_via_costs 5)
     (start_ripup_costs 100)
-    (start_pass_no 11583)
+    (start_pass_no 11406)
     (layer_rule F.Cu
       (active on)
       (preferred_direction horizontal)
@@ -31,50 +31,44 @@
     (clear 127.0 (type smd_to_turn_gap))
     (clear 50.8 (type smd_smd))
   )
-  (padstack "Via[0-1]_635:254_um"
+  (padstack "Via[0-1]_800:400_um"
     (shape
-      (circle F.Cu 635.0 0.0 0.0)
+      (circle F.Cu 800.0 0.0 0.0)
     )
     (shape
-      (circle B.Cu 635.0 0.0 0.0)
+      (circle B.Cu 800.0 0.0 0.0)
     )
     (attach off)
   )
   (via 
-    "Via[0-1]_635:254_um" "Via[0-1]_635:254_um" default
+    "Via[0-1]_800:400_um" "Via[0-1]_800:400_um" default
   )
   (via 
-    "Via[0-1]_635:254_um-kicad_default" "Via[0-1]_635:254_um" "kicad_default"
+    "Via[0-1]_800:400_um-kicad_default" "Via[0-1]_800:400_um" "kicad_default"
   )
   (via 
-    "Via[0-1]_635:254_um-5V" "Via[0-1]_635:254_um" 5V
+    "Via[0-1]_800:400_um-POWER-IN" "Via[0-1]_800:400_um" "POWER-IN"
   )
   (via 
-    "Via[0-1]_635:254_um-POWER-IN" "Via[0-1]_635:254_um" "POWER-IN"
+    "Via[0-1]_800:400_um-POWER-OUT" "Via[0-1]_800:400_um" "POWER-OUT"
   )
   (via 
-    "Via[0-1]_635:254_um-POWER-OUT" "Via[0-1]_635:254_um" "POWER-OUT"
-  )
-  (via 
-    "Via[0-1]_635:254_um-Terminal Block" "Via[0-1]_635:254_um" "Terminal Block"
+    "Via[0-1]_800:400_um-Terminal Block" "Via[0-1]_800:400_um" "Terminal Block"
   )
   (via_rule
-    default "Via[0-1]_635:254_um"
+    default "Via[0-1]_800:400_um"
   )
   (via_rule
-    "kicad_default" "Via[0-1]_635:254_um-kicad_default"
+    "kicad_default" "Via[0-1]_800:400_um-kicad_default"
   )
   (via_rule
-    5V "Via[0-1]_635:254_um-5V"
+    "POWER-IN" "Via[0-1]_800:400_um-POWER-IN"
   )
   (via_rule
-    "POWER-IN" "Via[0-1]_635:254_um-POWER-IN"
+    "POWER-OUT" "Via[0-1]_800:400_um-POWER-OUT"
   )
   (via_rule
-    "POWER-OUT" "Via[0-1]_635:254_um-POWER-OUT"
-  )
-  (via_rule
-    "Terminal Block" "Via[0-1]_635:254_um-Terminal Block"
+    "Terminal Block" "Via[0-1]_800:400_um-Terminal Block"
   )
   (class default
     (clearance_class default)
@@ -99,22 +93,12 @@
     "Net-(AD1-Pad47)" "Net-(AD2-Pad3)" "Net-(AD2-Pad14)" "Net-(AD2-Pad15)" "Net-(AD2-Pad16)" "Net-(AD2-Pad17)" "Net-(AD2-Pad20)" "Net-(AD2-Pad21)"
     "Net-(AD2-Pad22)" "Net-(AD2-Pad23)" "Net-(AD2-Pad24)" "Net-(AD2-Pad25)" "Net-(AD2-Pad26)" "Net-(AD2-Pad27)" "Net-(AD2-Pad28)" "Net-(AD2-Pad29)"
     "Net-(AD2-Pad30)" "Net-(AD2-Pad31)" "Net-(AD2-Pad32)" "Net-(AD2-Pad47)" /GPIO/GPIO4 /GPIO/GPIO5 /GPIO/GPIO6 /GPIO/GPIO7
-    /GPIO/GPIO8 /GPIO/GPIO9 /GPIO/GPIO10 /GPIO/GPIO11 /GPIO/GPIO12 /GPIO/GPIO13 "/GPIO/SPI_CS" "Net-(J7-Pad2)"
-    "Net-(J7-Pad1)" "Net-(J8-Pad2)" "Net-(J8-Pad1)" "Net-(Q5-Pad1)" "Net-(Q6-Pad1)" "Net-(Q7-Pad1)" "Net-(Q8-Pad1)"
+    /GPIO/GPIO8 /GPIO/GPIO9 /GPIO/GPIO10 /GPIO/GPIO11 /GPIO/GPIO12 /GPIO/GPIO13 "/GPIO/SPI_CS" "Net-(Q5-Pad1)"
+    "Net-(Q6-Pad1)" "Net-(Q7-Pad1)" "Net-(Q8-Pad1)" "Net-(D5-Pad2)" "Net-(J3-Pad3)" "Net-(J3-Pad2)" "Net-(J4-Pad3)" "Net-(J4-Pad2)"
     (clearance_class "kicad_default")
     (via_rule kicad_default)
     (rule
       (width 254.0)
-    )
-    (circuit 
-      (use_layer F.Cu B.Cu)
-    )
-  )
-  (class 5V
-    (clearance_class 5V)
-    (via_rule 5V)
-    (rule
-      (width 381.0)
     )
     (circuit 
       (use_layer F.Cu B.Cu)

@@ -727,36 +727,30 @@ Wire Wire Line
 	7600 3950 7900 3950
 Wire Wire Line
 	7900 4250 7600 4250
-Text Label 10500 2950 2    60   ~ 0
+Text Label 10600 4350 2    60   ~ 0
 COS
-Text Label 10500 3050 2    60   ~ 0
+Text Label 10600 4450 2    60   ~ 0
 COSLO
-Text Label 10500 3500 2    60   ~ 0
+Text Label 10600 4150 2    60   ~ 0
 SINLO
-Text Label 10500 3400 2    60   ~ 0
+Text Label 10600 4050 2    60   ~ 0
 SIN
 Wire Wire Line
-	10600 3050 10200 3050
+	10700 4450 10300 4450
 Wire Wire Line
-	10600 2950 10200 2950
+	10700 4350 10300 4350
 Wire Wire Line
-	10600 3500 10200 3500
+	10700 4150 10300 4150
 Wire Wire Line
-	10600 3400 10200 3400
-Text Label 10500 4050 2    60   ~ 0
+	10700 4050 10300 4050
+Text Label 10600 4250 2    60   ~ 0
 AGND
-Text Label 10500 3600 2    60   ~ 0
-AGND
-Text Label 10500 3150 2    60   ~ 0
+Text Label 10600 3950 2    60   ~ 0
 AGND
 Wire Wire Line
-	10600 4050 10200 4050
+	10700 4250 10300 4250
 Wire Wire Line
-	10600 3600 10200 3600
-Wire Wire Line
-	10600 3150 10200 3150
-Wire Wire Line
-	10050 3950 10600 3950
+	10700 3950 10300 3950
 $Comp
 L power:+12V #PWR?
 U 1 1 5F08F1F5
@@ -1069,45 +1063,100 @@ Wire Wire Line
 	5800 2900 5800 2950
 Wire Wire Line
 	9950 2950 9950 3300
+$Comp
+L Connector_Generic:Conn_01x10 J1
+U 1 1 5F06A12E
+P 10900 4050
+F 0 "J1" H 10980 4042 50  0000 L CNN
+F 1 "RESOLVER ARM" H 10980 3951 50  0000 L CNN
+F 2 "Connector_Molex:Molex_KK-254_AE-6410-10A_1x10_P2.54mm_Vertical" H 10900 4050 50  0001 C CNN
+F 3 "~" H 10900 4050 50  0001 C CNN
+	1    10900 4050
+	1    0    0    -1  
+$EndComp
 Wire Wire Line
-	9950 3850 10600 3850
+	10750 4550 10700 4550
+$Comp
+L Connector:TestPoint TP4
+U 1 1 5F0A4859
+P 3350 2700
+F 0 "TP4" H 3408 2818 50  0000 L CNN
+F 1 "TestPoint" H 3408 2727 50  0000 L CNN
+F 2 "TestPoint:TestPoint_THTPad_1.0x1.0mm_Drill0.5mm" H 3550 2700 50  0001 C CNN
+F 3 "~" H 3550 2700 50  0001 C CNN
+	1    3350 2700
+	1    0    0    -1  
+$EndComp
+$Comp
+L Connector:TestPoint TP5
+U 1 1 5F0A6B93
+P 3450 2700
+F 0 "TP5" H 3508 2818 50  0000 L CNN
+F 1 "TestPoint" H 3508 2727 50  0000 L CNN
+F 2 "TestPoint:TestPoint_THTPad_1.0x1.0mm_Drill0.5mm" H 3650 2700 50  0001 C CNN
+F 3 "~" H 3650 2700 50  0001 C CNN
+	1    3450 2700
+	1    0    0    -1  
+$EndComp
+$Comp
+L Connector:TestPoint TP6
+U 1 1 5F0A729F
+P 3650 2700
+F 0 "TP6" H 3708 2818 50  0000 L CNN
+F 1 "TestPoint" H 3708 2727 50  0000 L CNN
+F 2 "TestPoint:TestPoint_THTPad_1.0x1.0mm_Drill0.5mm" H 3850 2700 50  0001 C CNN
+F 3 "~" H 3850 2700 50  0001 C CNN
+	1    3650 2700
+	1    0    0    -1  
+$EndComp
+$Comp
+L Connector:TestPoint TP7
+U 1 1 5F0A7B14
+P 3750 2700
+F 0 "TP7" H 3808 2818 50  0000 L CNN
+F 1 "TestPoint" H 3808 2727 50  0000 L CNN
+F 2 "TestPoint:TestPoint_THTPad_1.0x1.0mm_Drill0.5mm" H 3950 2700 50  0001 C CNN
+F 3 "~" H 3950 2700 50  0001 C CNN
+	1    3750 2700
+	1    0    0    -1  
+$EndComp
+$Comp
+L Connector:TestPoint TP8
+U 1 1 5F0A9078
+P 9950 2950
+F 0 "TP8" V 9904 3138 50  0000 L CNN
+F 1 "TestPoint" V 9995 3138 50  0000 L CNN
+F 2 "TestPoint:TestPoint_THTPad_1.0x1.0mm_Drill0.5mm" H 10150 2950 50  0001 C CNN
+F 3 "~" H 10150 2950 50  0001 C CNN
+	1    9950 2950
+	0    1    1    0   
+$EndComp
+Connection ~ 9950 2950
+$Comp
+L Connector:TestPoint TP9
+U 1 1 5F0A9A85
+P 9950 5450
+F 0 "TP9" V 9904 5638 50  0000 L CNN
+F 1 "TestPoint" V 9995 5638 50  0000 L CNN
+F 2 "TestPoint:TestPoint_THTPad_1.0x1.0mm_Drill0.5mm" H 10150 5450 50  0001 C CNN
+F 3 "~" H 10150 5450 50  0001 C CNN
+	1    9950 5450
+	0    1    1    0   
+$EndComp
+Connection ~ 9950 5450
+Wire Wire Line
+	10700 4550 10300 4550
+Text Label 10600 4550 2    60   ~ 0
+AGND
+Connection ~ 10700 4550
+Wire Wire Line
+	9950 3750 10700 3750
+Connection ~ 9950 3750
+Wire Wire Line
+	9950 3850 10700 3850
 Connection ~ 9950 3850
 Wire Wire Line
-	10050 3950 10050 3750
-Wire Wire Line
-	10050 3750 9950 3750
-Connection ~ 9950 3750
-$Comp
-L Connector_Generic:Conn_01x03 J1
-U 1 1 5F0B1A7A
-P 10800 3050
-F 0 "J1" H 10880 3092 50  0000 L CNN
-F 1 "COS" H 10880 3001 50  0000 L CNN
-F 2 "Connector_JST:JST_EH_S3B-EH_1x03_P2.50mm_Horizontal" H 10800 3050 50  0001 C CNN
-F 3 "~" H 10800 3050 50  0001 C CNN
-	1    10800 3050
-	1    0    0    -1  
-$EndComp
-$Comp
-L Connector_Generic:Conn_01x03 J2
-U 1 1 5F0B3E39
-P 10800 3500
-F 0 "J2" H 10880 3542 50  0000 L CNN
-F 1 "SIN" H 10880 3451 50  0000 L CNN
-F 2 "Connector_JST:JST_EH_S3B-EH_1x03_P2.50mm_Horizontal" H 10800 3500 50  0001 C CNN
-F 3 "~" H 10800 3500 50  0001 C CNN
-	1    10800 3500
-	1    0    0    -1  
-$EndComp
-$Comp
-L Connector_Generic:Conn_01x03 J3
-U 1 1 5F0B43E4
-P 10800 3950
-F 0 "J3" H 10880 3992 50  0000 L CNN
-F 1 "EXC" H 10880 3901 50  0000 L CNN
-F 2 "Connector_JST:JST_EH_S3B-EH_1x03_P2.50mm_Horizontal" H 10800 3950 50  0001 C CNN
-F 3 "~" H 10800 3950 50  0001 C CNN
-	1    10800 3950
-	1    0    0    -1  
-$EndComp
+	10700 3650 10300 3650
+Text Label 10600 3650 2    60   ~ 0
+AGND
 $EndSCHEMATC

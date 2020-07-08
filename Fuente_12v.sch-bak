@@ -133,4 +133,59 @@ Wire Wire Line
 	3600 2100 4050 2100
 Text Notes 2350 1800 0    50   ~ 0
 Ver la corriente que consumen los RDC \npara no superar 1A que suministra el LM7812
+$Comp
+L Device:R R?
+U 1 1 5F0B9D9B
+P 4500 2250
+AR Path="/5F0B9D9B" Ref="R?"  Part="1" 
+AR Path="/5EF45E27/5F0B9D9B" Ref="R?"  Part="1" 
+AR Path="/5F077C82/5F0B9D9B" Ref="R?"  Part="1" 
+AR Path="/5EF34214/5F0B9D9B" Ref="R30"  Part="1" 
+F 0 "R30" V 4580 2250 40  0000 C CNN
+F 1 "560" V 4507 2251 40  0000 C CNN
+F 2 "Resistor_SMD:R_1206_3216Metric_Pad1.42x1.75mm_HandSolder" V 4430 2250 30  0000 C CNN
+F 3 "~" H 4500 2250 30  0000 C CNN
+	1    4500 2250
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:LED D?
+U 1 1 5F0B9DA1
+P 4500 2550
+AR Path="/5F0B9DA1" Ref="D?"  Part="1" 
+AR Path="/5EF45E27/5F0B9DA1" Ref="D?"  Part="1" 
+AR Path="/5F077C82/5F0B9DA1" Ref="D?"  Part="1" 
+AR Path="/5EF34214/5F0B9DA1" Ref="D5"  Part="1" 
+F 0 "D5" V 4539 2432 50  0000 R CNN
+F 1 "LED" V 4448 2432 50  0000 R CNN
+F 2 "LED_SMD:LED_1206_3216Metric_Pad1.42x1.75mm_HandSolder" H 4500 2550 50  0001 C CNN
+F 3 "~" H 4500 2550 50  0001 C CNN
+	1    4500 2550
+	0    -1   -1   0   
+$EndComp
+$Comp
+L power:GND #PWR?
+U 1 1 5F0B9E47
+P 4500 2700
+AR Path="/5F0B9E47" Ref="#PWR?"  Part="1" 
+AR Path="/5EF34214/5F0B9E47" Ref="#PWR057"  Part="1" 
+F 0 "#PWR057" H 4500 2700 30  0001 C CNN
+F 1 "GND" H 4500 2630 30  0001 C CNN
+F 2 "" H 4500 2700 60  0000 C CNN
+F 3 "" H 4500 2700 60  0000 C CNN
+	1    4500 2700
+	1    0    0    -1  
+$EndComp
+$Comp
+L Connector:TestPoint TP16
+U 1 1 5F0BA374
+P 4050 2400
+F 0 "TP16" V 4004 2588 50  0000 L CNN
+F 1 "TestPoint" V 4095 2588 50  0000 L CNN
+F 2 "TestPoint:TestPoint_THTPad_1.0x1.0mm_Drill0.5mm" H 4250 2400 50  0001 C CNN
+F 3 "~" H 4250 2400 50  0001 C CNN
+	1    4050 2400
+	0    1    1    0   
+$EndComp
+Connection ~ 4050 2400
 $EndSCHEMATC
