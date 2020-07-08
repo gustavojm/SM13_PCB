@@ -1,4 +1,4 @@
-update=mar 07 jul 2020 10:05:18 -03
+update=mar 07 jul 2020 21:07:49 -03
 version=1
 last_client=kicad
 [general]
@@ -247,6 +247,17 @@ dPairWidth=0.254
 dPairGap=0.25
 dPairViaGap=0.25
 [pcbnew/Netclasses/1]
+Name=5V
+Clearance=0.2032
+TrackWidth=0.381
+ViaDiameter=0.635
+ViaDrill=0.254
+uViaDiameter=0.635
+uViaDrill=0.254
+dPairWidth=0.254
+dPairGap=0.25
+dPairViaGap=0.25
+[pcbnew/Netclasses/2]
 Name=POWER-IN
 Clearance=0.2032
 TrackWidth=0.762
@@ -257,21 +268,10 @@ uViaDrill=0.254
 dPairWidth=0.254
 dPairGap=0.25
 dPairViaGap=0.25
-[pcbnew/Netclasses/2]
+[pcbnew/Netclasses/3]
 Name=POWER-OUT
 Clearance=0.2032
 TrackWidth=0.508
-ViaDiameter=0.635
-ViaDrill=0.254
-uViaDiameter=0.635
-uViaDrill=0.254
-dPairWidth=0.254
-dPairGap=0.25
-dPairViaGap=0.25
-[pcbnew/Netclasses/3]
-Name=SALIDAS
-Clearance=0.2032
-TrackWidth=0.381
 ViaDiameter=0.635
 ViaDrill=0.254
 uViaDiameter=0.635

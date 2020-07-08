@@ -3,7 +3,7 @@ EELAYER 30 0
 EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
-Sheet 2 5
+Sheet 2 6
 Title ""
 Date ""
 Rev ""
@@ -270,16 +270,12 @@ Wire Wire Line
 	6550 2800 6600 2800
 Connection ~ 6550 2800
 NoConn ~ 6600 2450
-NoConn ~ 6600 2350
 NoConn ~ 6600 2550
 NoConn ~ 6600 2650
-NoConn ~ 6600 2250
-NoConn ~ 5250 2350
 NoConn ~ 5250 2450
 NoConn ~ 5250 2550
 NoConn ~ 5250 2650
 NoConn ~ 5200 3600
-NoConn ~ 5250 2250
 Wire Wire Line
 	4100 1750 5500 1750
 Wire Wire Line

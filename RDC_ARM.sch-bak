@@ -3,7 +3,7 @@ EELAYER 30 0
 EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
-Sheet 3 5
+Sheet 3 6
 Title ""
 Date ""
 Rev ""
@@ -727,50 +727,36 @@ Wire Wire Line
 	7600 3950 7900 3950
 Wire Wire Line
 	7900 4250 7600 4250
-Text Label 10500 3250 2    60   ~ 0
+Text Label 10500 2950 2    60   ~ 0
 COS
-Text Label 10500 3350 2    60   ~ 0
+Text Label 10500 3050 2    60   ~ 0
 COSLO
-Text Label 10500 3650 2    60   ~ 0
+Text Label 10500 3500 2    60   ~ 0
 SINLO
-Text Label 10500 3550 2    60   ~ 0
+Text Label 10500 3400 2    60   ~ 0
 SIN
 Wire Wire Line
-	10600 3350 10200 3350
+	10600 3050 10200 3050
 Wire Wire Line
-	10600 3250 10200 3250
+	10600 2950 10200 2950
 Wire Wire Line
-	10600 3650 10200 3650
+	10600 3500 10200 3500
 Wire Wire Line
-	10600 3550 10200 3550
+	10600 3400 10200 3400
 Text Label 10500 4050 2    60   ~ 0
 AGND
-Text Label 10500 3750 2    60   ~ 0
+Text Label 10500 3600 2    60   ~ 0
 AGND
-Text Label 10500 3450 2    60   ~ 0
+Text Label 10500 3150 2    60   ~ 0
 AGND
 Wire Wire Line
 	10600 4050 10200 4050
 Wire Wire Line
-	10600 3750 10200 3750
+	10600 3600 10200 3600
 Wire Wire Line
-	10600 3450 10200 3450
+	10600 3150 10200 3150
 Wire Wire Line
 	10050 3950 10600 3950
-$Comp
-L Connector:Screw_Terminal_01x09 J?
-U 1 1 5EFA861B
-P 10800 3650
-AR Path="/5EFA861B" Ref="J?"  Part="1" 
-AR Path="/5EF45E27/5EFA861B" Ref="J1"  Part="1" 
-AR Path="/5F077C82/5EFA861B" Ref="J?"  Part="1" 
-F 0 "J1" H 10880 3692 50  0000 L CNN
-F 1 "CN_ARM" H 10880 3601 50  0000 L CNN
-F 2 "TerminalBlock_Phoenix:TerminalBlock_Phoenix_MKDS-1,5-9-5.08_1x09_P5.08mm_Horizontal" H 10800 3650 50  0001 C CNN
-F 3 "~" H 10800 3650 50  0001 C CNN
-	1    10800 3650
-	1    0    0    -1  
-$EndComp
 $Comp
 L power:+12V #PWR?
 U 1 1 5F08F1F5
@@ -1091,4 +1077,37 @@ Wire Wire Line
 Wire Wire Line
 	10050 3750 9950 3750
 Connection ~ 9950 3750
+$Comp
+L Connector_Generic:Conn_01x03 J1
+U 1 1 5F0B1A7A
+P 10800 3050
+F 0 "J1" H 10880 3092 50  0000 L CNN
+F 1 "Conn_01x03" H 10880 3001 50  0000 L CNN
+F 2 "Connector_JST:JST_EH_S3B-EH_1x03_P2.50mm_Horizontal" H 10800 3050 50  0001 C CNN
+F 3 "~" H 10800 3050 50  0001 C CNN
+	1    10800 3050
+	1    0    0    -1  
+$EndComp
+$Comp
+L Connector_Generic:Conn_01x03 J2
+U 1 1 5F0B3E39
+P 10800 3500
+F 0 "J2" H 10880 3542 50  0000 L CNN
+F 1 "Conn_01x03" H 10880 3451 50  0000 L CNN
+F 2 "Connector_JST:JST_EH_S3B-EH_1x03_P2.50mm_Horizontal" H 10800 3500 50  0001 C CNN
+F 3 "~" H 10800 3500 50  0001 C CNN
+	1    10800 3500
+	1    0    0    -1  
+$EndComp
+$Comp
+L Connector_Generic:Conn_01x03 J3
+U 1 1 5F0B43E4
+P 10800 3950
+F 0 "J3" H 10880 3992 50  0000 L CNN
+F 1 "Conn_01x03" H 10880 3901 50  0000 L CNN
+F 2 "Connector_JST:JST_EH_S3B-EH_1x03_P2.50mm_Horizontal" H 10800 3950 50  0001 C CNN
+F 3 "~" H 10800 3950 50  0001 C CNN
+	1    10800 3950
+	1    0    0    -1  
+$EndComp
 $EndSCHEMATC

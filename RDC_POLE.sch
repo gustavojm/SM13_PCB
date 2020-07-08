@@ -3,7 +3,7 @@ EELAYER 30 0
 EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
-Sheet 4 5
+Sheet 4 6
 Title ""
 Date ""
 Rev ""
@@ -694,9 +694,9 @@ Wire Wire Line
 	7900 4250 7600 4250
 Text Label 10500 4050 2    60   ~ 0
 AGND
-Text Label 10500 3750 2    60   ~ 0
+Text Label 10500 3600 2    60   ~ 0
 AGND
-Text Label 10500 3450 2    60   ~ 0
+Text Label 10500 3150 2    60   ~ 0
 AGND
 $Comp
 L power:+12V #PWR?
@@ -974,46 +974,32 @@ Wire Wire Line
 	4600 4250 6100 4250
 Wire Wire Line
 	5800 2900 5800 2950
-Text Label 10500 3550 2    60   ~ 0
+Text Label 10500 3400 2    60   ~ 0
 SIN
-Text Label 10500 3650 2    60   ~ 0
+Text Label 10500 3500 2    60   ~ 0
 SINLO
 Wire Wire Line
 	9950 2950 9950 3300
-Text Label 10500 3250 2    60   ~ 0
+Text Label 10500 2950 2    60   ~ 0
 COS
-Text Label 10500 3350 2    60   ~ 0
+Text Label 10500 3050 2    60   ~ 0
 COSLO
 Wire Wire Line
 	9950 3850 9950 5100
 Wire Wire Line
-	10600 3250 10200 3250
+	10600 2950 10200 2950
 Wire Wire Line
-	10600 3350 10200 3350
-$Comp
-L Connector:Screw_Terminal_01x09 J?
-U 1 1 5F08F1F4
-P 10800 3650
-AR Path="/5F08F1F4" Ref="J?"  Part="1" 
-AR Path="/5EF45E27/5F08F1F4" Ref="J?"  Part="1" 
-AR Path="/5F077C82/5F08F1F4" Ref="J2"  Part="1" 
-F 0 "J2" H 10880 3692 50  0000 L CNN
-F 1 "CN_POLE" H 10880 3601 50  0000 L CNN
-F 2 "TerminalBlock_Phoenix:TerminalBlock_Phoenix_MKDS-1,5-9-5.08_1x09_P5.08mm_Horizontal" H 10800 3650 50  0001 C CNN
-F 3 "~" H 10800 3650 50  0001 C CNN
-	1    10800 3650
-	1    0    0    -1  
-$EndComp
+	10600 3050 10200 3050
 Wire Wire Line
-	10600 3450 10200 3450
+	10600 3150 10200 3150
 Wire Wire Line
-	10600 3750 10200 3750
+	10600 3600 10200 3600
 Wire Wire Line
 	10600 4050 10200 4050
 Wire Wire Line
-	10600 3550 10200 3550
+	10600 3400 10200 3400
 Wire Wire Line
-	10600 3650 10200 3650
+	10600 3500 10200 3500
 Wire Wire Line
 	10050 3950 10600 3950
 Wire Wire Line
@@ -1024,4 +1010,37 @@ Wire Wire Line
 Wire Wire Line
 	10050 3750 10050 3950
 Connection ~ 9950 3750
+$Comp
+L Connector_Generic:Conn_01x03 J4
+U 1 1 5F0C4501
+P 10800 3050
+F 0 "J4" H 10880 3092 50  0000 L CNN
+F 1 "COS" H 10880 3001 50  0000 L CNN
+F 2 "Connector_JST:JST_EH_S3B-EH_1x03_P2.50mm_Horizontal" H 10800 3050 50  0001 C CNN
+F 3 "~" H 10800 3050 50  0001 C CNN
+	1    10800 3050
+	1    0    0    -1  
+$EndComp
+$Comp
+L Connector_Generic:Conn_01x03 J5
+U 1 1 5F0C48DE
+P 10800 3500
+F 0 "J5" H 10880 3542 50  0000 L CNN
+F 1 "SIN" H 10880 3451 50  0000 L CNN
+F 2 "Connector_JST:JST_EH_S3B-EH_1x03_P2.50mm_Horizontal" H 10800 3500 50  0001 C CNN
+F 3 "~" H 10800 3500 50  0001 C CNN
+	1    10800 3500
+	1    0    0    -1  
+$EndComp
+$Comp
+L Connector_Generic:Conn_01x03 J6
+U 1 1 5F0C52DE
+P 10800 3950
+F 0 "J6" H 10880 3992 50  0000 L CNN
+F 1 "EXC" H 10880 3901 50  0000 L CNN
+F 2 "Connector_JST:JST_EH_S3B-EH_1x03_P2.50mm_Horizontal" H 10800 3950 50  0001 C CNN
+F 3 "~" H 10800 3950 50  0001 C CNN
+	1    10800 3950
+	1    0    0    -1  
+$EndComp
 $EndSCHEMATC
