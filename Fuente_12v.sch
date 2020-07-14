@@ -131,8 +131,6 @@ Wire Wire Line
 Connection ~ 3600 2100
 Wire Wire Line
 	3600 2100 4050 2100
-Text Notes 2350 1800 0    50   ~ 0
-Ver la corriente que consumen los RDC \npara no superar 1A que suministra el LM7812
 $Comp
 L Device:R R?
 U 1 1 5F0B9D9B
@@ -181,7 +179,7 @@ L Connector:TestPoint TP16
 U 1 1 5F0BA374
 P 4050 2400
 F 0 "TP16" V 4004 2588 50  0000 L CNN
-F 1 "TestPoint" V 4095 2588 50  0000 L CNN
+F 1 "TPGND" V 4095 2588 50  0000 L CNN
 F 2 "TestPoint:TestPoint_THTPad_1.0x1.0mm_Drill0.5mm" H 4250 2400 50  0001 C CNN
 F 3 "~" H 4250 2400 50  0001 C CNN
 	1    4050 2400
