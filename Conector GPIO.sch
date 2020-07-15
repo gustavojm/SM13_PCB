@@ -3,7 +3,7 @@ EELAYER 30 0
 EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
-Sheet 2 6
+Sheet 2 5
 Title ""
 Date ""
 Rev ""
@@ -184,34 +184,8 @@ F 3 "" H 5900 2200 60  0000 C CNN
 	1    5900 2200
 	1    0    0    -1  
 $EndComp
-$Comp
-L power:+24V #PWR04
-U 1 1 53430CCE
-P 8300 1900
-F 0 "#PWR04" H 8300 1850 20  0001 C CNN
-F 1 "+24V" H 8300 2000 30  0000 C CNN
-F 2 "" H 8300 1900 60  0000 C CNN
-F 3 "" H 8300 1900 60  0000 C CNN
-	1    8300 1900
-	1    0    0    -1  
-$EndComp
-$Comp
-L power:+24V #PWR03
-U 1 1 53430CDB
-P 3550 1850
-F 0 "#PWR03" H 3550 1800 20  0001 C CNN
-F 1 "+24V" H 3550 1950 30  0000 C CNN
-F 2 "" H 3550 1850 60  0000 C CNN
-F 3 "" H 3550 1850 60  0000 C CNN
-	1    3550 1850
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	5500 1950 3650 1950
 Wire Wire Line
 	3550 1950 3550 1850
-Wire Wire Line
-	8300 1950 8300 1900
 Wire Wire Line
 	7700 1750 7800 1750
 $Comp
@@ -239,19 +213,14 @@ $EndComp
 $Comp
 L power:PWR_FLAG #FLG03
 U 1 1 5EF2C8AE
-P 3650 1950
-F 0 "#FLG03" H 3650 2025 50  0001 C CNN
-F 1 "PWR_FLAG" H 3650 2123 50  0000 C CNN
-F 2 "" H 3650 1950 50  0001 C CNN
-F 3 "~" H 3650 1950 50  0001 C CNN
-	1    3650 1950
+P 3750 1950
+F 0 "#FLG03" H 3750 2025 50  0001 C CNN
+F 1 "PWR_FLAG" H 3750 2123 50  0000 C CNN
+F 2 "" H 3750 1950 50  0001 C CNN
+F 3 "~" H 3750 1950 50  0001 C CNN
+	1    3750 1950
 	1    0    0    -1  
 $EndComp
-Connection ~ 3650 1950
-Wire Wire Line
-	3650 1950 3550 1950
-Wire Wire Line
-	6300 1950 8300 1950
 Connection ~ 4100 1750
 Wire Wire Line
 	4000 1750 4100 1750
@@ -281,4 +250,108 @@ Wire Wire Line
 Wire Wire Line
 	6300 1750 7700 1750
 Connection ~ 7700 1750
+$Comp
+L power:+12V #PWR?
+U 1 1 5F1004FD
+P 8200 1900
+AR Path="/5F1004FD" Ref="#PWR?"  Part="1" 
+AR Path="/5EF34214/5F1004FD" Ref="#PWR?"  Part="1" 
+AR Path="/5EF2A268/5F1004FD" Ref="#PWR0101"  Part="1" 
+F 0 "#PWR0101" H 8200 1750 50  0001 C CNN
+F 1 "+12V" H 8215 2073 50  0000 C CNN
+F 2 "" H 8200 1900 50  0001 C CNN
+F 3 "" H 8200 1900 50  0001 C CNN
+	1    8200 1900
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R R?
+U 1 1 5F10050A
+P 8200 2200
+AR Path="/5F10050A" Ref="R?"  Part="1" 
+AR Path="/5EF45E27/5F10050A" Ref="R?"  Part="1" 
+AR Path="/5F077C82/5F10050A" Ref="R?"  Part="1" 
+AR Path="/5EF34214/5F10050A" Ref="R?"  Part="1" 
+AR Path="/5EF2A268/5F10050A" Ref="R30"  Part="1" 
+F 0 "R30" V 8280 2200 40  0000 C CNN
+F 1 "560" V 8207 2201 40  0000 C CNN
+F 2 "Resistor_SMD:R_1206_3216Metric_Pad1.42x1.75mm_HandSolder" V 8130 2200 30  0000 C CNN
+F 3 "~" H 8200 2200 30  0000 C CNN
+	1    8200 2200
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:LED D?
+U 1 1 5F100510
+P 8200 2500
+AR Path="/5F100510" Ref="D?"  Part="1" 
+AR Path="/5EF45E27/5F100510" Ref="D?"  Part="1" 
+AR Path="/5F077C82/5F100510" Ref="D?"  Part="1" 
+AR Path="/5EF34214/5F100510" Ref="D?"  Part="1" 
+AR Path="/5EF2A268/5F100510" Ref="D5"  Part="1" 
+F 0 "D5" V 8239 2382 50  0000 R CNN
+F 1 "LED" V 8148 2382 50  0000 R CNN
+F 2 "LED_SMD:LED_1206_3216Metric_Pad1.42x1.75mm_HandSolder" H 8200 2500 50  0001 C CNN
+F 3 "~" H 8200 2500 50  0001 C CNN
+	1    8200 2500
+	0    -1   -1   0   
+$EndComp
+$Comp
+L power:GND #PWR?
+U 1 1 5F100516
+P 8200 2850
+AR Path="/5F100516" Ref="#PWR?"  Part="1" 
+AR Path="/5EF34214/5F100516" Ref="#PWR?"  Part="1" 
+AR Path="/5EF2A268/5F100516" Ref="#PWR0102"  Part="1" 
+F 0 "#PWR0102" H 8200 2850 30  0001 C CNN
+F 1 "GND" H 8200 2780 30  0001 C CNN
+F 2 "" H 8200 2850 60  0000 C CNN
+F 3 "" H 8200 2850 60  0000 C CNN
+	1    8200 2850
+	1    0    0    -1  
+$EndComp
+$Comp
+L Connector:TestPoint TP?
+U 1 1 5F10051C
+P 8200 2750
+AR Path="/5EF34214/5F10051C" Ref="TP?"  Part="1" 
+AR Path="/5EF2A268/5F10051C" Ref="TP16"  Part="1" 
+F 0 "TP16" V 8154 2938 50  0000 L CNN
+F 1 "TPGND" V 8245 2938 50  0000 L CNN
+F 2 "TestPoint:TestPoint_THTPad_1.0x1.0mm_Drill0.5mm" H 8400 2750 50  0001 C CNN
+F 3 "~" H 8400 2750 50  0001 C CNN
+	1    8200 2750
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	8200 2650 8200 2750
+Connection ~ 8200 2750
+Wire Wire Line
+	8200 2750 8200 2850
+Wire Wire Line
+	8200 1900 8200 1950
+Wire Wire Line
+	6300 1950 8200 1950
+Connection ~ 8200 1950
+Wire Wire Line
+	8200 1950 8200 2050
+Connection ~ 3750 1950
+Wire Wire Line
+	3750 1950 5500 1950
+Wire Wire Line
+	3550 1950 3750 1950
+$Comp
+L power:+12V #PWR?
+U 1 1 5F1138EB
+P 3550 1850
+AR Path="/5F1138EB" Ref="#PWR?"  Part="1" 
+AR Path="/5EF34214/5F1138EB" Ref="#PWR?"  Part="1" 
+AR Path="/5EF2A268/5F1138EB" Ref="#PWR0103"  Part="1" 
+F 0 "#PWR0103" H 3550 1700 50  0001 C CNN
+F 1 "+12V" H 3565 2023 50  0000 C CNN
+F 2 "" H 3550 1850 50  0001 C CNN
+F 3 "" H 3550 1850 50  0001 C CNN
+	1    3550 1850
+	1    0    0    -1  
+$EndComp
 $EndSCHEMATC

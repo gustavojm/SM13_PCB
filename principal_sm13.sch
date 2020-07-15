@@ -3,7 +3,7 @@ EELAYER 30 0
 EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
-Sheet 1 6
+Sheet 1 5
 Title "RDC"
 Date "2020-06-22"
 Rev "1.0"
@@ -100,12 +100,6 @@ Wire Wire Line
 	6450 1400 6450 4100
 Wire Wire Line
 	6450 4100 7300 4100
-$Sheet
-S 5150 5600 850  400 
-U 5EF34214
-F0 "Fuente" 50
-F1 "Fuente_12v.sch" 50
-$EndSheet
 $Comp
 L Connector:TestPoint TP1
 U 1 1 5F11CC37
