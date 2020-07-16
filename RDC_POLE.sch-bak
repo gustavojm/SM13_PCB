@@ -3,7 +3,7 @@ EELAYER 30 0
 EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
-Sheet 4 6
+Sheet 4 5
 Title ""
 Date ""
 Rev ""
@@ -191,7 +191,7 @@ F 3 "~" H 1300 5100 60  0000 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L Device:CP1 C?
+L Device:C C?
 U 1 1 5EFA84B3
 P 4250 1800
 AR Path="/5EFA84B3" Ref="C?"  Part="1" 
@@ -649,9 +649,6 @@ Wire Wire Line
 Connection ~ 4750 2050
 Text Label 5050 2050 2    60   ~ 0
 AGND
-Connection ~ 4250 1650
-Wire Wire Line
-	4250 1650 4250 1750
 $Comp
 L Device:R R?
 U 1 1 5EFA85F8
@@ -823,7 +820,7 @@ Wire Wire Line
 	3800 6750 3800 6850
 NoConn ~ 3150 3300
 $Comp
-L Device:CP1 C?
+L Device:C C?
 U 1 1 5F08F1CC
 P 3800 6500
 AR Path="/5F08F1CC" Ref="C?"  Part="1" 
@@ -837,7 +834,7 @@ F 3 "~" H 3800 6500 60  0000 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L Device:CP1 C?
+L Device:C C?
 U 1 1 5F08F1CD
 P 1700 4250
 AR Path="/5F08F1CD" Ref="C?"  Part="1" 
@@ -851,7 +848,7 @@ F 3 "~" H 1700 4250 60  0000 C CNN
 	1    0    0    1   
 $EndComp
 $Comp
-L Device:CP1 C?
+L Device:C C?
 U 1 1 5EF54A0E
 P 1700 3600
 AR Path="/5EF54A0E" Ref="C?"  Part="1" 
@@ -859,7 +856,7 @@ AR Path="/5EF45E27/5EF54A0E" Ref="C?"  Part="1"
 AR Path="/5F077C82/5EF54A0E" Ref="C18"  Part="1" 
 F 0 "C18" H 1750 3700 50  0000 L CNN
 F 1 "10µ" H 1750 3500 50  0000 L CNN
-F 2 "Capacitor_SMD:CP_Elec_4x5.4" H 1700 3600 60  0000 C CNN
+F 2 "Capacitor_SMD:C_1206_3216Metric_Pad1.42x1.75mm_HandSolder" H 1700 3600 60  0000 C CNN
 F 3 "~" H 1700 3600 60  0000 C CNN
 	1    1700 3600
 	1    0    0    -1  
@@ -1008,7 +1005,7 @@ U 1 1 5F0B4618
 P 9950 2950
 F 0 "TP14" V 9904 3138 50  0000 L CNN
 F 1 "TPEXCPOLE" V 9995 3138 50  0000 L CNN
-F 2 "TestPoint:TestPoint_THTPad_1.0x1.0mm_Drill0.5mm" H 10150 2950 50  0001 C CNN
+F 2 "TestPoint:TestPoint_THTPad_2.0x2.0mm_Drill1.0mm" H 10150 2950 50  0001 C CNN
 F 3 "~" H 10150 2950 50  0001 C CNN
 	1    9950 2950
 	0    1    1    0   
@@ -1020,7 +1017,7 @@ U 1 1 5F0B53CC
 P 9950 5450
 F 0 "TP15" V 9904 5638 50  0000 L CNN
 F 1 "TPEXCLOPOLE" V 9995 5638 50  0000 L CNN
-F 2 "TestPoint:TestPoint_THTPad_1.0x1.0mm_Drill0.5mm" H 10150 5450 50  0001 C CNN
+F 2 "TestPoint:TestPoint_THTPad_2.0x2.0mm_Drill1.0mm" H 10150 5450 50  0001 C CNN
 F 3 "~" H 10150 5450 50  0001 C CNN
 	1    9950 5450
 	0    1    1    0   
@@ -1032,7 +1029,7 @@ U 1 1 5F0B5F68
 P 3350 2700
 F 0 "TP10" V 3300 2600 50  0000 L CNN
 F 1 "TPCOSPOLE" V 3350 2900 50  0000 L CNN
-F 2 "TestPoint:TestPoint_THTPad_1.0x1.0mm_Drill0.5mm" H 3550 2700 50  0001 C CNN
+F 2 "TestPoint:TestPoint_THTPad_2.0x2.0mm_Drill1.0mm" H 3550 2700 50  0001 C CNN
 F 3 "~" H 3550 2700 50  0001 C CNN
 	1    3350 2700
 	1    0    0    -1  
@@ -1043,7 +1040,7 @@ U 1 1 5F0B648D
 P 3450 2700
 F 0 "TP11" V 3400 2600 50  0000 L CNN
 F 1 "TPCOSLOPOLE" V 3450 2900 50  0000 L CNN
-F 2 "TestPoint:TestPoint_THTPad_1.0x1.0mm_Drill0.5mm" H 3650 2700 50  0001 C CNN
+F 2 "TestPoint:TestPoint_THTPad_2.0x2.0mm_Drill1.0mm" H 3650 2700 50  0001 C CNN
 F 3 "~" H 3650 2700 50  0001 C CNN
 	1    3450 2700
 	1    0    0    -1  
@@ -1054,7 +1051,7 @@ U 1 1 5F0B6AB2
 P 3650 2700
 F 0 "TP12" V 3600 2600 50  0000 L CNN
 F 1 "TPSINLOPOLE" V 3650 2900 50  0000 L CNN
-F 2 "TestPoint:TestPoint_THTPad_1.0x1.0mm_Drill0.5mm" H 3850 2700 50  0001 C CNN
+F 2 "TestPoint:TestPoint_THTPad_2.0x2.0mm_Drill1.0mm" H 3850 2700 50  0001 C CNN
 F 3 "~" H 3850 2700 50  0001 C CNN
 	1    3650 2700
 	1    0    0    -1  
@@ -1065,7 +1062,7 @@ U 1 1 5F0B6E5F
 P 3750 2700
 F 0 "TP13" V 3700 2600 50  0000 L CNN
 F 1 "TPSINPOLE" V 3750 2900 50  0000 L CNN
-F 2 "TestPoint:TestPoint_THTPad_1.0x1.0mm_Drill0.5mm" H 3950 2700 50  0001 C CNN
+F 2 "TestPoint:TestPoint_THTPad_2.0x2.0mm_Drill1.0mm" H 3950 2700 50  0001 C CNN
 F 3 "~" H 3950 2700 50  0001 C CNN
 	1    3750 2700
 	1    0    0    -1  

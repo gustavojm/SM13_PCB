@@ -21,8 +21,8 @@
       )
     )
     (boundary
-      (path pcb 0  284976 -142465  238176 -142465  235176 -139465  158376 -139465
-            158376 -100165  284976 -100165  284976 -142465)
+      (path pcb 0  284976 -140865  239176 -140865  237776 -139465  158376 -139465
+            158376 -100165  284976 -100165  284976 -140865)
     )
     (via "Via[0-1]_800:400_um")
     (rule
@@ -33,8 +33,27 @@
     )
   )
   (placement
-    (component TestPoint:TestPoint_THTPad_1.0x1.0mm_Drill0.5mm
+    (component TestPoint:TestPoint_THTPad_1.5x1.5mm_Drill0.7mm
       (place TP16 218376 -109465 front 0 (PN TPGND))
+      (place TP15 178116 -109453 front 0 (PN TPEXCLOPOLE))
+      (place TP14 175576 -109453 front 0 (PN TPEXCPOLE))
+      (place TP13 183196 -109453 front 0 (PN TPSINPOLE))
+      (place TP12 185736 -109508 front 0 (PN TPSINLOPOLE))
+      (place TP11 193356 -109508 front 0 (PN TPCOSLOPOLE))
+      (place TP10 190816 -109508 front 0 (PN TPCOSPOLE))
+      (place TP9 231056 -109453 front 0 (PN TPEXCLOARM))
+      (place TP8 228516 -109453 front 0 (PN TPEXCARM))
+      (place TP7 236136 -109453 front 0 (PN TPSINARM))
+      (place TP6 238676 -109453 front 0 (PN TPSINLOARM))
+      (place TP5 246296 -109453 front 0 (PN TPCOSLOARM))
+      (place TP4 243756 -109453 front 0 (PN TPCOSARM))
+      (place TP3 227940 -133995 front 0 (PN TP_MISO))
+      (place TP2 223455 -133995 front 0 (PN TP_MOSI))
+      (place TP1 218970 -133995 front 0 (PN TP_SCK))
+    )
+    (component Capacitor_SMD:C_1206_3216Metric_Pad1.42x1.75mm_HandSolder
+      (place C18 191198 -113835 front 180 (PN 10µ))
+      (place C5 244288 -113835 front 180 (PN 10µ))
     )
     (component Resistor_SMD:R_1206_3216Metric_Pad1.42x1.75mm_HandSolder
       (place R30 273840 -136005 front 0 (PN 560))
@@ -48,20 +67,6 @@
     (component "Connector_Molex:Molex_KK-254_AE-6410-04A_1x04_P2.54mm_Vertical"
       (place J4 203116 -103865 front 0 (PN "MOT POLE"))
       (place J3 256456 -103865 front 0 (PN "MOT ARM"))
-    )
-    (component TestPoint:TestPoint_THTPad_1.0x1.0mm_Drill0.5mm::1
-      (place TP15 178116 -109453 front 0 (PN TPEXCLOPOLE))
-      (place TP14 175576 -109453 front 0 (PN TPEXCPOLE))
-      (place TP13 183196 -109453 front 0 (PN TPSINPOLE))
-      (place TP12 185736 -109508 front 0 (PN TPSINLOPOLE))
-      (place TP11 193356 -109508 front 0 (PN TPCOSLOPOLE))
-      (place TP10 190816 -109508 front 0 (PN TPCOSPOLE))
-      (place TP9 231056 -109453 front 0 (PN TPEXCLOARM))
-      (place TP8 228516 -109453 front 0 (PN TPEXCARM))
-      (place TP7 236136 -109453 front 0 (PN TPSINARM))
-      (place TP6 238676 -109453 front 0 (PN TPSINLOARM))
-      (place TP5 246296 -109453 front 0 (PN TPCOSLOARM))
-      (place TP4 243756 -109453 front 0 (PN TPCOSARM))
     )
     (component "Connector_Molex:Molex_KK-254_AE-6410-10A_1x10_P2.54mm_Vertical"
       (place J2 173036 -103865 front 0 (PN "RESOLVER POLE"))
@@ -83,12 +88,7 @@
       (place Q6 273840 -110410 front 180 (PN BC817))
       (place Q5 280452 -110476 front 180 (PN BC817))
     )
-    (component TestPoint:TestPoint_THTPad_1.0x1.0mm_Drill0.5mm::2
-      (place TP3 227940 -133995 front 0 (PN TP_MISO))
-      (place TP2 223455 -133995 front 0 (PN TP_MOSI))
-      (place TP1 218970 -133995 front 0 (PN TP_SCK))
-    )
-    (component Capacitor_SMD:C_1206_3216Metric_Pad1.42x1.75mm_HandSolder
+    (component Capacitor_SMD:C_1206_3216Metric_Pad1.42x1.75mm_HandSolder::1
       (place C19 211730 -113800 front 0 (PN 10n))
       (place C20 204376 -113828 front 0 (PN 4,7µ))
       (place R7 264252 -130355 front 180 (PN 1K))
@@ -140,10 +140,6 @@
       (place AD1 247588 -122815 front 0 (PN AD2S1210))
       (place AD2 194543 -122540 front 0 (PN AD2S1210))
     )
-    (component Capacitor_SMD:CP_Elec_4x5.4
-      (place C5 244288 -113835 front 180 (PN 10µ))
-      (place C18 191198 -113835 front 180 (PN 10µ))
-    )
     (component LED_SMD:LED_1206_3216Metric_Pad1.42x1.75mm_HandSolder::1
       (place D1 264252 -120292 front 180 (PN LED))
       (place D3 211690 -120235 front 180 (PN LED))
@@ -184,16 +180,30 @@
     )
   )
   (library
-    (image TestPoint:TestPoint_THTPad_1.0x1.0mm_Drill0.5mm
-      (outline (path signal 120  -700 700  700 700))
-      (outline (path signal 120  700 700  700 -700))
-      (outline (path signal 120  700 -700  -700 -700))
-      (outline (path signal 120  -700 -700  -700 700))
-      (outline (path signal 50  -1000 1000  1000 1000))
-      (outline (path signal 50  -1000 1000  -1000 -1000))
-      (outline (path signal 50  1000 -1000  1000 1000))
-      (outline (path signal 50  1000 -1000  -1000 -1000))
-      (pin Rect[A]Pad_1000x1000_um 1 0 0)
+    (image TestPoint:TestPoint_THTPad_1.5x1.5mm_Drill0.7mm
+      (outline (path signal 120  -950 950  950 950))
+      (outline (path signal 120  950 950  950 -950))
+      (outline (path signal 120  950 -950  -950 -950))
+      (outline (path signal 120  -950 -950  -950 950))
+      (outline (path signal 50  -1250 1250  1250 1250))
+      (outline (path signal 50  -1250 1250  -1250 -1250))
+      (outline (path signal 50  1250 -1250  1250 1250))
+      (outline (path signal 50  1250 -1250  -1250 -1250))
+      (pin Rect[A]Pad_1500x1500_um 1 0 0)
+    )
+    (image Capacitor_SMD:C_1206_3216Metric_Pad1.42x1.75mm_HandSolder
+      (outline (path signal 50  2450 -1120  -2450 -1120))
+      (outline (path signal 50  2450 1120  2450 -1120))
+      (outline (path signal 50  -2450 1120  2450 1120))
+      (outline (path signal 50  -2450 -1120  -2450 1120))
+      (outline (path signal 120  -602.064 -910  602.064 -910))
+      (outline (path signal 120  -602.064 910  602.064 910))
+      (outline (path signal 100  1600 -800  -1600 -800))
+      (outline (path signal 100  1600 800  1600 -800))
+      (outline (path signal 100  -1600 800  1600 800))
+      (outline (path signal 100  -1600 -800  -1600 800))
+      (pin RoundRect[T]Pad_1425x1750_250.951_um 2 1487.5 0)
+      (pin RoundRect[T]Pad_1425x1750_250.951_um 1 -1487.5 0)
     )
     (image Resistor_SMD:R_1206_3216Metric_Pad1.42x1.75mm_HandSolder
       (outline (path signal 100  -1600 -800  -1600 800))
@@ -267,17 +277,6 @@
       (pin Oval[A]Pad_1740x2190_um 3 5080 0)
       (pin Oval[A]Pad_1740x2190_um 2 2540 0)
       (pin RoundRect[A]Pad_1740x2190_250.95_um 1 0 0)
-    )
-    (image TestPoint:TestPoint_THTPad_1.0x1.0mm_Drill0.5mm::1
-      (outline (path signal 127  -700 700  700 700))
-      (outline (path signal 127  700 700  700 -700))
-      (outline (path signal 127  700 -700  -700 -700))
-      (outline (path signal 127  -700 -700  -700 700))
-      (outline (path signal 50  -1000 1000  1000 1000))
-      (outline (path signal 50  -1000 1000  -1000 -1000))
-      (outline (path signal 50  1000 -1000  1000 1000))
-      (outline (path signal 50  1000 -1000  -1000 -1000))
-      (pin Rect[A]Pad_1000x1000_um 1 0 0)
     )
     (image "Connector_Molex:Molex_KK-254_AE-6410-10A_1x10_P2.54mm_Vertical"
       (outline (path signal 150  -1270 2920  -1270 -2880))
@@ -382,18 +381,7 @@
       (pin Rect[T]Pad_900x800_um 2 -1000 -950)
       (pin Rect[T]Pad_900x800_um 1 -1000 950)
     )
-    (image TestPoint:TestPoint_THTPad_1.0x1.0mm_Drill0.5mm::2
-      (outline (path signal 50  1000 -1000  -1000 -1000))
-      (outline (path signal 50  1000 -1000  1000 1000))
-      (outline (path signal 50  -1000 1000  -1000 -1000))
-      (outline (path signal 50  -1000 1000  1000 1000))
-      (outline (path signal 127  -700 -700  -700 700))
-      (outline (path signal 127  700 -700  -700 -700))
-      (outline (path signal 127  700 700  700 -700))
-      (outline (path signal 127  -700 700  700 700))
-      (pin Rect[A]Pad_1000x1000_um 1 0 0)
-    )
-    (image Capacitor_SMD:C_1206_3216Metric_Pad1.42x1.75mm_HandSolder
+    (image Capacitor_SMD:C_1206_3216Metric_Pad1.42x1.75mm_HandSolder::1
       (outline (path signal 50  2450 -1120  -2450 -1120))
       (outline (path signal 50  2450 1120  2450 -1120))
       (outline (path signal 50  -2450 1120  2450 1120))
@@ -509,48 +497,6 @@
       (pin RoundRect[T]Pad_300x1475_75.285_um 47 -2250 4162.5)
       (pin RoundRect[T]Pad_300x1475_75.285_um 48 -2750 4162.5)
       (pin Rect[T]Pad_3600x3600_um 49 0 0)
-    )
-    (image Capacitor_SMD:CP_Elec_4x5.4
-      (outline (path signal 150  2000 0  1918.99 -563.465  1682.51 -1081.28  1309.72 -1511.5
-            830.83 -1819.26  284.63 -1979.64  -284.63 -1979.64  -830.83 -1819.26
-            -1309.72 -1511.5  -1682.51 -1081.28  -1918.99 -563.465  -2000 0
-            -1918.99 563.465  -1682.51 1081.28  -1309.72 1511.5  -830.83 1819.26
-            -284.63 1979.64  284.63 1979.64  830.83 1819.26  1309.72 1511.5
-            1682.51 1081.28  1918.99 563.465  2000 0))
-      (outline (path signal 150  2150 2150  2150 -2150))
-      (outline (path signal 150  -1150 2150  2150 2150))
-      (outline (path signal 150  -1150 -2150  2150 -2150))
-      (outline (path signal 150  -2150 1150  -2150 -1150))
-      (outline (path signal 150  -2150 1150  -1150 2150))
-      (outline (path signal 150  -2150 -1150  -1150 -2150))
-      (outline (path signal 150  -1574.77 1000  -1174.77 1000))
-      (outline (path signal 150  -1374.77 1200  -1374.77 800))
-      (outline (path signal 127  2260 -2260  2260 -1060))
-      (outline (path signal 127  2260 2260  2260 1060))
-      (outline (path signal 127  -1195.56 2260  2260 2260))
-      (outline (path signal 127  -1195.56 -2260  2260 -2260))
-      (outline (path signal 127  -2260 -1195.56  -2260 -1060))
-      (outline (path signal 127  -2260 1195.56  -2260 1060))
-      (outline (path signal 127  -2260 1195.56  -1195.56 2260))
-      (outline (path signal 127  -2260 -1195.56  -1195.56 -2260))
-      (outline (path signal 127  -3000 1560  -2500 1560))
-      (outline (path signal 127  -2750 1810  -2750 1310))
-      (outline (path signal 50  2400 2400  2400 1050))
-      (outline (path signal 50  2400 1050  3350 1050))
-      (outline (path signal 50  3350 1050  3350 -1050))
-      (outline (path signal 50  3350 -1050  2400 -1050))
-      (outline (path signal 50  2400 -1050  2400 -2400))
-      (outline (path signal 50  -1250 -2400  2400 -2400))
-      (outline (path signal 50  -1250 2400  2400 2400))
-      (outline (path signal 50  -2400 -1250  -1250 -2400))
-      (outline (path signal 50  -2400 1250  -1250 2400))
-      (outline (path signal 50  -2400 1250  -2400 1050))
-      (outline (path signal 50  -2400 -1050  -2400 -1250))
-      (outline (path signal 50  -2400 1050  -3350 1050))
-      (outline (path signal 50  -3350 1050  -3350 -1050))
-      (outline (path signal 50  -3350 -1050  -2400 -1050))
-      (pin RoundRect[T]Pad_2600x1600_250.951_um 1 -1800 0)
-      (pin RoundRect[T]Pad_2600x1600_250.951_um 2 1800 0)
     )
     (image LED_SMD:LED_1206_3216Metric_Pad1.42x1.75mm_HandSolder::1
       (outline (path signal 50  2450 -1120  -2450 -1120))
@@ -788,20 +734,6 @@
       (shape (path B.Cu 1740  0 -225  0 225))
       (attach off)
     )
-    (padstack RoundRect[T]Pad_2600x1600_250.951_um
-      (shape (polygon F.Cu 0  1093.58 797.138  1135.83 785.817  1175.47 767.33  1211.31 742.24
-            1242.24 711.308  1267.33 675.476  1285.82 635.83  1297.14 593.577
-            1300.95 550  1300.95 -550  1297.14 -593.577  1285.82 -635.83
-            1267.33 -675.475  1242.24 -711.308  1211.31 -742.24  1175.48 -767.33
-            1135.83 -785.817  1093.58 -797.138  1050 -800.951  -1050 -800.951
-            -1093.58 -797.138  -1135.83 -785.817  -1175.47 -767.33  -1211.31 -742.24
-            -1242.24 -711.308  -1267.33 -675.476  -1285.82 -635.83  -1297.14 -593.577
-            -1300.95 -550  -1300.95 550  -1297.14 593.577  -1285.82 635.83
-            -1267.33 675.475  -1242.24 711.308  -1211.31 742.24  -1175.48 767.33
-            -1135.83 785.817  -1093.58 797.138  -1050 800.951  1050 800.951
-            1093.58 797.138))
-      (attach off)
-    )
     (padstack RoundRect[T]Pad_1425x1750_250.951_um
       (shape (polygon F.Cu 0  506.077 872.138  548.33 860.817  587.975 842.33  623.808 817.24
             654.74 786.308  679.83 750.476  698.317 710.83  709.638 668.577
@@ -893,9 +825,9 @@
       (shape (rect F.Cu -450 -400 450 400))
       (attach off)
     )
-    (padstack Rect[A]Pad_1000x1000_um
-      (shape (rect F.Cu -500 -500 500 500))
-      (shape (rect B.Cu -500 -500 500 500))
+    (padstack Rect[A]Pad_1500x1500_um
+      (shape (rect F.Cu -750 -750 750 750))
+      (shape (rect B.Cu -750 -750 750 750))
       (attach off)
     )
     (padstack Rect[A]Pad_1700x1700_um
@@ -915,10 +847,10 @@
         C12-1 C13-1 C24-1 C25-1 P14-3 P12-1)
     )
     (net GND
-      (pins TP16-1 D5-1 J4-4 J4-1 J3-4 J3-1 J2-10 J2-7 J2-4 J2-1 J1-10 J1-7 J1-4 J1-1
-        Q8-2 Q7-2 Q6-2 Q5-2 C19-1 C20-2 C1-2 AD1-2 AD1-5 AD1-9 AD1-19 AD1-40 AD2-2
-        AD2-5 AD2-9 AD2-19 AD2-40 C4-2 C6-1 C9-2 C5-2 C7-2 C10-2 C12-2 C13-2 C2-2
-        C8-2 C17-2 C21-2 C18-2 C22-2 C24-2 C25-2 C14-2 C15-2 Q1-3 Q2-3 Q3-3 Q4-3 R5-1
+      (pins TP16-1 C18-2 C5-2 D5-1 J4-4 J4-1 J3-4 J3-1 J2-10 J2-7 J2-4 J2-1 J1-10
+        J1-7 J1-4 J1-1 Q8-2 Q7-2 Q6-2 Q5-2 C19-1 C20-2 C1-2 AD1-2 AD1-5 AD1-9 AD1-19
+        AD1-40 AD2-2 AD2-5 AD2-9 AD2-19 AD2-40 C4-2 C6-1 C9-2 C7-2 C10-2 C12-2 C13-2
+        C2-2 C8-2 C17-2 C21-2 C22-2 C24-2 C25-2 C14-2 C15-2 Q1-3 Q2-3 Q3-3 Q4-3 R5-1
         R16-1 U1-4 U2-4 P14-4 P12-3 P12-4)
     )
     (net /GPIO/GPIO2
@@ -974,10 +906,10 @@
       (pins TP4-1 J1-8 AD1-45)
     )
     (net "Net-(AD1-Pad46)"
-      (pins AD1-46 C4-1 C5-1)
+      (pins C5-1 AD1-46 C4-1)
     )
     (net "Net-(AD2-Pad46)"
-      (pins AD2-46 C17-1 C18-1)
+      (pins C18-1 AD2-46 C17-1)
     )
     (net "/RDC POLE/COS"
       (pins TP10-1 J2-8 AD2-45)
@@ -1288,7 +1220,7 @@
         (clearance 203.3)
       )
     )
-    (class "POWER-IN" +24V
+    (class "POWER-IN"
       (circuit
         (use_via Via[0-1]_800:400_um)
       )

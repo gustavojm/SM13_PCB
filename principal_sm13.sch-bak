@@ -3,7 +3,7 @@ EELAYER 30 0
 EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
-Sheet 1 6
+Sheet 1 5
 Title "RDC"
 Date "2020-06-22"
 Rev "1.0"
@@ -100,19 +100,13 @@ Wire Wire Line
 	6450 1400 6450 4100
 Wire Wire Line
 	6450 4100 7300 4100
-$Sheet
-S 5150 5600 850  400 
-U 5EF34214
-F0 "Fuente" 50
-F1 "Fuente_12v.sch" 50
-$EndSheet
 $Comp
 L Connector:TestPoint TP1
 U 1 1 5F11CC37
 P 6850 2600
 F 0 "TP1" H 6850 2650 50  0000 L CNN
 F 1 "TP_SCK" V 6850 2800 50  0000 L CNN
-F 2 "TestPoint:TestPoint_THTPad_1.0x1.0mm_Drill0.5mm" H 7050 2600 50  0001 C CNN
+F 2 "TestPoint:TestPoint_THTPad_2.0x2.0mm_Drill1.0mm" H 7050 2600 50  0001 C CNN
 F 3 "~" H 7050 2600 50  0001 C CNN
 	1    6850 2600
 	1    0    0    -1  
@@ -123,7 +117,7 @@ U 1 1 5F11D1E5
 P 7000 2600
 F 0 "TP2" H 7000 2650 50  0000 L CNN
 F 1 "TP_MOSI" V 7000 2800 50  0000 L CNN
-F 2 "TestPoint:TestPoint_THTPad_1.0x1.0mm_Drill0.5mm" H 7200 2600 50  0001 C CNN
+F 2 "TestPoint:TestPoint_THTPad_2.0x2.0mm_Drill1.0mm" H 7200 2600 50  0001 C CNN
 F 3 "~" H 7200 2600 50  0001 C CNN
 	1    7000 2600
 	1    0    0    -1  
@@ -134,7 +128,7 @@ U 1 1 5F11D4A3
 P 7150 2600
 F 0 "TP3" H 7150 2650 50  0000 L CNN
 F 1 "TP_MISO" V 7150 2800 50  0000 L CNN
-F 2 "TestPoint:TestPoint_THTPad_1.0x1.0mm_Drill0.5mm" H 7350 2600 50  0001 C CNN
+F 2 "TestPoint:TestPoint_THTPad_2.0x2.0mm_Drill1.0mm" H 7350 2600 50  0001 C CNN
 F 3 "~" H 7350 2600 50  0001 C CNN
 	1    7150 2600
 	1    0    0    -1  
