@@ -318,7 +318,7 @@ AR Path="/5EF34214/5F10051C" Ref="TP?"  Part="1"
 AR Path="/5EF2A268/5F10051C" Ref="TP16"  Part="1" 
 F 0 "TP16" V 8154 2938 50  0000 L CNN
 F 1 "TPGND" V 8245 2938 50  0000 L CNN
-F 2 "TestPoint:TestPoint_THTPad_1.5x1.5mm_Drill0.7mm" H 8400 2750 50  0001 C CNN
+F 2 "TestPoint:TestPoint_reducido" H 8400 2750 50  0001 C CNN
 F 3 "~" H 8400 2750 50  0001 C CNN
 	1    8200 2750
 	0    1    1    0   

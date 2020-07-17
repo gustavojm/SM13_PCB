@@ -106,7 +106,7 @@ U 1 1 5F11CC37
 P 6850 2600
 F 0 "TP1" H 6850 2650 50  0000 L CNN
 F 1 "TP_SCK" V 6850 2800 50  0000 L CNN
-F 2 "TestPoint:TestPoint_THTPad_1.5x1.5mm_Drill0.7mm" H 7050 2600 50  0001 C CNN
+F 2 "TestPoint:TestPoint_reducido" H 7050 2600 50  0001 C CNN
 F 3 "~" H 7050 2600 50  0001 C CNN
 	1    6850 2600
 	1    0    0    -1  
@@ -117,7 +117,7 @@ U 1 1 5F11D1E5
 P 7000 2600
 F 0 "TP2" H 7000 2650 50  0000 L CNN
 F 1 "TP_MOSI" V 7000 2800 50  0000 L CNN
-F 2 "TestPoint:TestPoint_THTPad_1.5x1.5mm_Drill0.7mm" H 7200 2600 50  0001 C CNN
+F 2 "TestPoint:TestPoint_reducido" H 7200 2600 50  0001 C CNN
 F 3 "~" H 7200 2600 50  0001 C CNN
 	1    7000 2600
 	1    0    0    -1  
@@ -128,7 +128,7 @@ U 1 1 5F11D4A3
 P 7150 2600
 F 0 "TP3" H 7150 2650 50  0000 L CNN
 F 1 "TP_MISO" V 7150 2800 50  0000 L CNN
-F 2 "TestPoint:TestPoint_THTPad_1.5x1.5mm_Drill0.7mm" H 7350 2600 50  0001 C CNN
+F 2 "TestPoint:TestPoint_reducido" H 7350 2600 50  0001 C CNN
 F 3 "~" H 7350 2600 50  0001 C CNN
 	1    7150 2600
 	1    0    0    -1  
