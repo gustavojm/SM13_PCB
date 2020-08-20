@@ -11,12 +11,12 @@
     (via_costs 50)
     (plane_via_costs 5)
     (start_ripup_costs 100)
-    (start_pass_no 8765)
+    (start_pass_no 6190)
     (layer_rule F.Cu
       (active on)
       (preferred_direction horizontal)
       (preferred_direction_trace_costs 1.0)
-      (against_preferred_direction_trace_costs 4.1)
+      (against_preferred_direction_trace_costs 4.0)
     )
     (layer_rule B.Cu
       (active on)
@@ -93,8 +93,7 @@
     "Net-(AD1-Pad47)" "Net-(AD2-Pad3)" "Net-(AD2-Pad14)" "Net-(AD2-Pad15)" "Net-(AD2-Pad16)" "Net-(AD2-Pad17)" "Net-(AD2-Pad20)" "Net-(AD2-Pad21)"
     "Net-(AD2-Pad22)" "Net-(AD2-Pad23)" "Net-(AD2-Pad24)" "Net-(AD2-Pad25)" "Net-(AD2-Pad26)" "Net-(AD2-Pad27)" "Net-(AD2-Pad28)" "Net-(AD2-Pad29)"
     "Net-(AD2-Pad30)" "Net-(AD2-Pad31)" "Net-(AD2-Pad32)" "Net-(AD2-Pad47)" /GPIO/GPIO4 /GPIO/GPIO5 /GPIO/GPIO6 /GPIO/GPIO7
-    /GPIO/GPIO8 /GPIO/GPIO9 /GPIO/GPIO10 /GPIO/GPIO11 /GPIO/GPIO12 /GPIO/GPIO13 "/GPIO/SPI_CS" "Net-(Q5-Pad1)"
-    "Net-(Q6-Pad1)" "Net-(Q7-Pad1)" "Net-(Q8-Pad1)" "Net-(D5-Pad2)" "Net-(J3-Pad3)" "Net-(J3-Pad2)" "Net-(J4-Pad3)" "Net-(J4-Pad2)"
+    /GPIO/GPIO8 /GPIO/GPIO9 /GPIO/GPIO10 /GPIO/GPIO11 /GPIO/GPIO12 /GPIO/GPIO13 "/GPIO/SPI_CS" "Net-(D5-Pad2)"
     (clearance_class "kicad_default")
     (via_rule kicad_default)
     (rule
