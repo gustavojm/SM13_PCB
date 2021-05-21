@@ -1,3 +1,6 @@
 (fp_lib_table
   (lib (name SM13)(type KiCad)(uri /home/gustavo/SM13/Esquema/Logo)(options "")(descr ""))
+  (lib (name Esquema)(type KiCad)(uri /home/gustavo/SM13/Esquema)(options "")(descr ""))
+  (lib (name CIAA)(type KiCad)(uri /home/gustavo/CIAA/Hardware/PCB/NXP/footprints)(options "")(descr ""))
+  (lib (name footprints)(type KiCad)(uri /home/gustavo/CIAA/Hardware/PCB/NXP/footprints.pretty)(options "")(descr ""))
 )

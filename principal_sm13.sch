@@ -153,4 +153,6 @@ Wire Wire Line
 	6150 3900 7300 3900
 Wire Wire Line
 	6050 4100 7300 4100
+Text Notes 2850 4600 0    50   ~ 0
+GPIO0 Reset (Ambos)\nGPIO1 Sample (Ambos)\nGPIO2 WR/FSYNC ARM\nGPIO3 WR/FSYNC POLE\nGPIO7 Input (SW1) Output (LED D6)\nGPIO8 1-Wire\n
 $EndSCHEMATC

@@ -576,10 +576,6 @@ F 3 "" H 8550 4650 60  0000 C CNN
 $EndComp
 Wire Wire Line
 	8550 4550 8550 4650
-Text Label 7850 4250 2    60   ~ 0
-~EXC
-Wire Wire Line
-	8450 4350 8550 4350
 Wire Wire Line
 	7700 3350 8450 3350
 $Comp
@@ -643,52 +639,12 @@ $EndComp
 Wire Wire Line
 	9950 5450 9800 5450
 Wire Wire Line
-	8300 4250 8550 4250
-Wire Wire Line
 	4750 2050 5100 2050
 Connection ~ 4750 2050
 Text Label 5050 2050 2    60   ~ 0
 AGND
-$Comp
-L Device:R R?
-U 1 1 5EFA85F8
-P 8050 4250
-AR Path="/5EFA85F8" Ref="R?"  Part="1" 
-AR Path="/5EF45E27/5EFA85F8" Ref="R?"  Part="1" 
-AR Path="/5F077C82/5EFA85F8" Ref="R20"  Part="1" 
-F 0 "R20" V 8130 4250 40  0000 C CNN
-F 1 "10K" V 8057 4251 40  0000 C CNN
-F 2 "Resistor_SMD:R_1206_3216Metric_Pad1.42x1.75mm_HandSolder" V 7980 4250 30  0000 C CNN
-F 3 "~" H 8050 4250 30  0000 C CNN
-	1    8050 4250
-	0    -1   -1   0   
-$EndComp
-$Comp
-L Device:R R?
-U 1 1 5EFA85FE
-P 8050 3950
-AR Path="/5EFA85FE" Ref="R?"  Part="1" 
-AR Path="/5EF45E27/5EFA85FE" Ref="R?"  Part="1" 
-AR Path="/5F077C82/5EFA85FE" Ref="R19"  Part="1" 
-F 0 "R19" V 8130 3950 40  0000 C CNN
-F 1 "10K" V 8057 3951 40  0000 C CNN
-F 2 "Resistor_SMD:R_1206_3216Metric_Pad1.42x1.75mm_HandSolder" V 7980 3950 30  0000 C CNN
-F 3 "~" H 8050 3950 30  0000 C CNN
-	1    8050 3950
-	0    -1   -1   0   
-$EndComp
 Wire Wire Line
 	8550 3300 8550 3750
-Wire Wire Line
-	8200 3950 8300 3950
-Connection ~ 8300 3950
-Wire Wire Line
-	8200 4250 8300 4250
-Connection ~ 8300 4250
-Wire Wire Line
-	7600 3950 7900 3950
-Wire Wire Line
-	7900 4250 7600 4250
 Text Label 10500 4550 2    60   ~ 0
 AGND
 Text Label 10500 3950 2    60   ~ 0
@@ -763,8 +719,6 @@ Wire Wire Line
 Wire Wire Line
 	8300 5450 9300 5450
 Connection ~ 9300 5450
-Wire Wire Line
-	8300 4250 8300 5450
 Wire Wire Line
 	9500 5100 9300 5100
 Wire Wire Line
@@ -881,19 +835,6 @@ Wire Wire Line
 	4050 2700 4050 3300
 Text Notes 4450 2700 0    60   ~ 0
 A0/A1\n 0  0 Normal mode—position output\n 0  1 Normal mode—velocity output\n 1  0 Reserved\n 1  1 Configuration mode
-Connection ~ 8450 4050
-Wire Wire Line
-	8450 4050 8450 4350
-Wire Wire Line
-	8450 4050 8550 4050
-Wire Wire Line
-	8300 2950 8300 3950
-Wire Wire Line
-	8300 3950 8550 3950
-Wire Wire Line
-	8450 3350 8450 4050
-Text Label 7850 3950 2    60   ~ 0
-EXC
 Wire Wire Line
 	2050 4050 2600 4050
 $Comp
@@ -1086,4 +1027,63 @@ Text Label 10500 4050 2    60   ~ 0
 SIN
 Text Label 10500 4250 2    60   ~ 0
 AGND
+Text Label 7850 4050 2    60   ~ 0
+EXC
+Wire Wire Line
+	8300 4050 8550 4050
+Wire Wire Line
+	8300 4350 8300 5450
+Wire Wire Line
+	7900 4350 7600 4350
+Wire Wire Line
+	7600 4050 7900 4050
+Connection ~ 8300 4350
+Wire Wire Line
+	8200 4350 8300 4350
+Connection ~ 8300 4050
+Wire Wire Line
+	8200 4050 8300 4050
+$Comp
+L Device:R R?
+U 1 1 5EFA85FE
+P 8050 4050
+AR Path="/5EFA85FE" Ref="R?"  Part="1" 
+AR Path="/5EF45E27/5EFA85FE" Ref="R?"  Part="1" 
+AR Path="/5F077C82/5EFA85FE" Ref="R19"  Part="1" 
+F 0 "R19" V 8130 4050 40  0000 C CNN
+F 1 "10K" V 8057 4051 40  0000 C CNN
+F 2 "Resistor_SMD:R_1206_3216Metric_Pad1.42x1.75mm_HandSolder" V 7980 4050 30  0000 C CNN
+F 3 "~" H 8050 4050 30  0000 C CNN
+	1    8050 4050
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Device:R R?
+U 1 1 5EFA85F8
+P 8050 4350
+AR Path="/5EFA85F8" Ref="R?"  Part="1" 
+AR Path="/5EF45E27/5EFA85F8" Ref="R?"  Part="1" 
+AR Path="/5F077C82/5EFA85F8" Ref="R20"  Part="1" 
+F 0 "R20" V 8130 4350 40  0000 C CNN
+F 1 "10K" V 8057 4351 40  0000 C CNN
+F 2 "Resistor_SMD:R_1206_3216Metric_Pad1.42x1.75mm_HandSolder" V 7980 4350 30  0000 C CNN
+F 3 "~" H 8050 4350 30  0000 C CNN
+	1    8050 4350
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	8300 4350 8550 4350
+Wire Wire Line
+	8450 4250 8550 4250
+Text Label 7850 4350 2    60   ~ 0
+~EXC
+Wire Wire Line
+	8450 3350 8450 3950
+Wire Wire Line
+	8550 3950 8450 3950
+Connection ~ 8450 3950
+Wire Wire Line
+	8450 3950 8450 4250
+Wire Wire Line
+	8300 2950 8300 4050
 $EndSCHEMATC

@@ -3,4 +3,5 @@
   (lib (name AD8397ARZ)(type Legacy)(uri /home/gustavo/SM13/Esquema/AD8397ARZ.lib)(options "")(descr ""))
   (lib (name conn_3x2)(type Legacy)(uri /home/gustavo/SM13/Esquema/conn_3x2.lib)(options "")(descr ""))
   (lib (name conn_10x2)(type Legacy)(uri /home/gustavo/SM13/Esquema/conn_10x2.lib)(options "")(descr ""))
+  (lib (name sw_push)(type Legacy)(uri /home/gustavo/SM13/Esquema/sw_push.lib)(options "")(descr ""))
 )

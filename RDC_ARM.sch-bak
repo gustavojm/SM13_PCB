@@ -3,7 +3,7 @@ EELAYER 30 0
 EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
-Sheet 3 5
+Sheet 3 4
 Title ""
 Date ""
 Rev ""
@@ -597,10 +597,8 @@ F 3 "" H 8550 4650 60  0000 C CNN
 $EndComp
 Wire Wire Line
 	8550 4550 8550 4650
-Text Label 7850 4250 2    60   ~ 0
+Text Label 7750 4350 2    60   ~ 0
 ~EXC
-Wire Wire Line
-	8450 4350 8550 4350
 Wire Wire Line
 	7700 3350 8450 3350
 $Comp
@@ -664,8 +662,6 @@ $EndComp
 Wire Wire Line
 	9950 5450 9800 5450
 Wire Wire Line
-	8300 4250 8550 4250
-Wire Wire Line
 	4750 2050 5100 2050
 Connection ~ 4750 2050
 Text Label 5050 2050 2    60   ~ 0
@@ -673,43 +669,43 @@ AGND
 $Comp
 L Device:R R?
 U 1 1 5F08F1F2
-P 8050 4250
+P 7950 4350
 AR Path="/5F08F1F2" Ref="R?"  Part="1" 
 AR Path="/5EF45E27/5F08F1F2" Ref="R10"  Part="1" 
 AR Path="/5F077C82/5F08F1F2" Ref="R?"  Part="1" 
-F 0 "R10" V 8130 4250 40  0000 C CNN
-F 1 "10K" V 8057 4251 40  0000 C CNN
-F 2 "Resistor_SMD:R_1206_3216Metric_Pad1.42x1.75mm_HandSolder" V 7980 4250 30  0000 C CNN
-F 3 "~" H 8050 4250 30  0000 C CNN
-	1    8050 4250
+F 0 "R10" V 8030 4350 40  0000 C CNN
+F 1 "10K" V 7957 4351 40  0000 C CNN
+F 2 "Resistor_SMD:R_1206_3216Metric_Pad1.42x1.75mm_HandSolder" V 7880 4350 30  0000 C CNN
+F 3 "~" H 7950 4350 30  0000 C CNN
+	1    7950 4350
 	0    -1   -1   0   
 $EndComp
 $Comp
 L Device:R R?
 U 1 1 5F08F1F3
-P 8050 3950
+P 7950 4050
 AR Path="/5F08F1F3" Ref="R?"  Part="1" 
 AR Path="/5EF45E27/5F08F1F3" Ref="R9"  Part="1" 
 AR Path="/5F077C82/5F08F1F3" Ref="R?"  Part="1" 
-F 0 "R9" V 8130 3950 40  0000 C CNN
-F 1 "10K" V 8057 3951 40  0000 C CNN
-F 2 "Resistor_SMD:R_1206_3216Metric_Pad1.42x1.75mm_HandSolder" V 7980 3950 30  0000 C CNN
-F 3 "~" H 8050 3950 30  0000 C CNN
-	1    8050 3950
+F 0 "R9" V 8030 4050 40  0000 C CNN
+F 1 "10K" V 7957 4051 40  0000 C CNN
+F 2 "Resistor_SMD:R_1206_3216Metric_Pad1.42x1.75mm_HandSolder" V 7880 4050 30  0000 C CNN
+F 3 "~" H 7950 4050 30  0000 C CNN
+	1    7950 4050
 	0    -1   -1   0   
 $EndComp
 Wire Wire Line
 	8550 3300 8550 3750
 Wire Wire Line
-	8200 3950 8300 3950
-Connection ~ 8300 3950
+	8100 4050 8200 4050
+Connection ~ 8200 4050
 Wire Wire Line
-	8200 4250 8300 4250
-Connection ~ 8300 4250
+	8100 4350 8200 4350
+Connection ~ 8200 4350
 Wire Wire Line
-	7600 3950 7900 3950
+	7500 4050 7800 4050
 Wire Wire Line
-	7900 4250 7600 4250
+	7800 4350 7500 4350
 Text Label 10600 4350 2    60   ~ 0
 COS
 Text Label 10600 4450 2    60   ~ 0
@@ -769,8 +765,6 @@ $EndComp
 Connection ~ 9300 2950
 Wire Wire Line
 	9300 2950 9500 2950
-Wire Wire Line
-	8300 2950 9300 2950
 $Comp
 L power:GND #PWR?
 U 1 1 5EFA8635
@@ -801,11 +795,9 @@ F 3 "" H 4250 2050 60  0000 C CNN
 $EndComp
 Wire Wire Line
 	9300 5450 9500 5450
-Wire Wire Line
-	8300 5450 9300 5450
 Connection ~ 9300 5450
 Wire Wire Line
-	8300 4250 8300 5450
+	8200 4350 8200 5450
 Wire Wire Line
 	9950 3850 9950 5100
 Wire Wire Line
@@ -924,18 +916,7 @@ Wire Wire Line
 	4050 2700 4050 3300
 Text Notes 4450 2700 0    60   ~ 0
 A0/A1\n 0  0 Normal mode—position output\n 0  1 Normal mode—velocity output\n 1  0 Reserved\n 1  1 Configuration mode
-Connection ~ 8450 4050
-Wire Wire Line
-	8450 4050 8450 4350
-Wire Wire Line
-	8450 4050 8550 4050
-Wire Wire Line
-	8300 2950 8300 3950
-Wire Wire Line
-	8300 3950 8550 3950
-Wire Wire Line
-	8450 3350 8450 4050
-Text Label 7850 3950 2    60   ~ 0
+Text Label 7750 4050 2    60   ~ 0
 EXC
 Wire Wire Line
 	2050 4050 2600 4050
@@ -1153,4 +1134,23 @@ F 3 "~" H 4250 1800 60  0000 C CNN
 	1    4250 1800
 	1    0    0    -1  
 $EndComp
+Wire Wire Line
+	8200 4350 8550 4350
+Wire Wire Line
+	8200 2950 9300 2950
+Wire Wire Line
+	8200 2950 8200 4050
+Wire Wire Line
+	8200 4050 8550 4050
+Wire Wire Line
+	8550 4250 8450 4250
+Wire Wire Line
+	8450 4250 8450 3950
+Wire Wire Line
+	8550 3950 8450 3950
+Connection ~ 8450 3950
+Wire Wire Line
+	8450 3950 8450 3350
+Wire Wire Line
+	8200 5450 9300 5450
 $EndSCHEMATC
